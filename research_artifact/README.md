@@ -1,6 +1,6 @@
 # Reproduction entry point
 
-Companion artifact for **When Priority Changes Fail to Improve Task-Input Freshness**.
+Companion artifact for **From Priority Changes to Service Gains: Evaluating Task-Input Freshness**.
 
 Repository target supplied by the author: <https://github.com/elexlebron-spec/cscwd-3>. The paper identifies the exact published commit once publication is verified. No DOI is claimed. This package omits the manuscript, author metadata files, local absolute paths, compiler binaries, and old manuscript versions. A public GitHub account and commit history are not anonymous; venue review requirements must still be checked. No separate open-source license has been assigned to the research code. Public input-data license files are retained.
 
@@ -13,6 +13,7 @@ Unpack `CSCWD2027_review_artifact.zip` and work in its `cscwd2027_artifact` fold
 ```sh
 python3 -m pip install -r requirements.txt
 python3 scripts/verify_confirmatory.py --replay
+python3 scripts/verify_mechanism_probe.py
 ```
 
 The second command verifies the frozen source/configuration/data hashes, separate validation/test seeds, complete 1,760-policy-trace matrix, all recorded actions and costs, every version-exact task outcome, and task-by-task dominance of the unrestricted boundary reference. It also copies the frozen source into a temporary directory and regenerates seed-100 actions/freshness for the synthetic, Seismology, and Montage structures. It does not overwrite raw experimental records or compare machine-dependent timings.
@@ -22,24 +23,29 @@ To regenerate analysis and the three figures:
 ```sh
 python3 scripts/analyze_confirmatory.py
 python3 scripts/analyze_revision.py
+python3 scripts/analyze_mechanism_probe.py
+python3 scripts/plot_evaluation_evidence.py
 ```
 
-The first command reconstructs confirmatory results from saved records, writes numerical macros, and saves vector/PNG figures in `paper/figures`. The second adds a clearly labeled post-hoc analytical interpretation of those same traces, not new simulations or a revised policy. Correctness regressions can be run with `python3 -m unittest discover -s tests -v`.
+The first command reconstructs primary results. The additional commands retain the original survival-bound analysis, replay the post-hoc one-action interventions, and draw the combined evidence figure. They do not tune or change the tested policies. Correctness regressions can be run with python3 -m unittest discover -s tests -v.
 
 ## Paper-to-output map
 
-| Paper item | Preserved outputs | Reproduction entry point |
+| Paper item | Preserved outputs | Entry point |
 |---|---|---|
-| Table I: complete public structures | `data/public/manifest.json`, `*_structure.json`, raw source JSONs and license | `scripts/fetch_public_data.py` records the fixed upstream commit; existing files are included for offline use |
-| Table II: three 10% conditions | `results/runs/confirmatory_v1/analysis/{mean_freshness_percent,paired_differences,trace_summary}.csv` | `scripts/analyze_confirmatory.py` |
-| Fig. 1: mechanism slice | `analysis/mechanism_by_seed.csv`, `analysis/analysis.json` within the run | `scripts/analyze_confirmatory.py` |
-| Fig. 2: budgets | `analysis/mean_freshness_percent.csv`, individual records | `scripts/analyze_confirmatory.py` |
-| Fig. 3: input-size strata | `analysis/analysis.json` field `public_strata`, original traces/actions | `scripts/analyze_confirmatory.py` replays input-level service |
-| Exact-reference results | run `milp/*.json`, dynamic-MILP `records/*.json`, `analysis/paired_solver_timing.csv` | `scripts/analyze_confirmatory.py` |
-| Joint-survival ceiling and illustrative delay target | `analysis/revision_diagnostics.json`, `paper/revision_macros.tex` | `scripts/analyze_revision.py` |
-| Worked design scenario | `configs/worked_design_case.json`, `results/worked_design_case.json` | `scripts/run_design_case.py`; constructed, not empirical |
+| Table I: complete public structures | data/public/manifest.json, original JSONs/license, processed structures | scripts/fetch_public_data.py; files included for offline use |
+| Table II: first positive-immediate intervention | results/runs/mechanism_probe_v1/summary.json representative field and seed100.json | scripts/analyze_mechanism_probe.py; scripts/plot_evaluation_evidence.py emits macros |
+| Table III: primary 10% results | confirmatory_v1/analysis/{mean_freshness_percent,paired_differences,trace_summary}.csv | scripts/analyze_confirmatory.py |
+| Fig. 1a,b: primary evaluation signals | confirmatory_v1/analysis/analysis.json | scripts/plot_evaluation_evidence.py |
+| Fig. 1c: common-continuation probe | mechanism_probe_v1/summary.json, all 20 seed records | scripts/analyze_mechanism_probe.py; scripts/plot_evaluation_evidence.py |
+| Fig. 2: budgets | confirmatory_v1/analysis/mean_freshness_percent.csv | scripts/analyze_confirmatory.py |
+| Large-group outcomes and exact references | confirmatory_v1/analysis/analysis.json, milp/ and dynamic records | scripts/analyze_confirmatory.py |
+| Post-hoc survival ceiling | confirmatory_v1/analysis/revision_diagnostics.json | scripts/analyze_revision.py |
+| Version-contract comparison | results/worked_design_contract.json | scripts/run_design_contract.py |
 
-All `analysis/` paths in the table are under `results/runs/confirmatory_v1/`. `RESULTS_MAP.json` supplies the corresponding machine-readable map. Differences are absolute percentage points from unrounded trace means. Confidence intervals resample the 20 paired complete traces; tasks/windows are not independent replicates.
+Run directories above are under results/runs. The 480 interventions are 24 starts per seed on 20 previously seen test traces, not 480 independent samples or new confirmatory trials. At each start, only the initial choice differs; both branches subsequently run Gq on their own cache for five windows. Confidence intervals resample seed-level intervention averages. The first positive-immediate seed/window is selected without consulting later outcomes. All records remain available, including continued benefits and reversals. Equality of identical-action branches and exact replay of branch A against the preserved Gq trajectory are checked.
+
+The official BIM documentation permits choosing consumed versions. The worked contract therefore compares latest-published and frozen-manifest rules on identical constructed events. It is not a calibrated field study, and passing a different criterion is not an improvement under the old metric.
 
 ## Experiment provenance
 

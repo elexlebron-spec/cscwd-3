@@ -1,19 +1,22 @@
 {
-  "paper_title": "When Priority Changes Fail to Improve Task-Input Freshness",
-  "run": "results/runs/confirmatory_v1",
-  "confirmatory_protocol": "configs/confirmatory.json",
-  "confirmatory_source_lock": "configs/confirmatory.lock.json",
+  "paper_title": "From Priority Changes to Service Gains: Evaluating Task-Input Freshness",
+  "primary_run": "results/runs/confirmatory_v1",
+  "post_hoc_probe": "results/runs/mechanism_probe_v1",
   "table_I": "data/public/manifest.json",
-  "table_II": ["analysis/mean_freshness_percent.csv", "analysis/paired_differences.csv", "analysis/trace_summary.csv"],
-  "figure_1": "analysis/mechanism_by_seed.csv",
-  "figure_2": "analysis/mean_freshness_percent.csv",
-  "figure_3": "analysis/analysis.json#public_strata",
-  "solver_timing": "analysis/paired_solver_timing.csv",
-  "post_hoc_survival_bound": "analysis/revision_diagnostics.json",
-  "analysis_entry_point": "scripts/analyze_confirmatory.py",
-  "post_hoc_entry_point": "scripts/analyze_revision.py",
-  "verification_entry_point": "python3 scripts/verify_confirmatory.py --replay",
-  "worked_scenario": "configs/worked_design_case.json",
+  "table_II": "results/runs/mechanism_probe_v1/summary.json#representative",
+  "table_III": [
+    "results/runs/confirmatory_v1/analysis/mean_freshness_percent.csv",
+    "results/runs/confirmatory_v1/analysis/paired_differences.csv"
+  ],
+  "figure_1": [
+    "scripts/plot_evaluation_evidence.py",
+    "results/runs/mechanism_probe_v1/summary.json"
+  ],
+  "figure_2": "scripts/analyze_confirmatory.py",
+  "primary_verification": "python3 scripts/verify_confirmatory.py --replay",
+  "probe_reproduction": "python3 scripts/analyze_mechanism_probe.py",
+  "version_contract": "python3 scripts/run_design_contract.py",
+  "protocol_note": "Probe and contract comparison are post-hoc; original core code/configuration unchanged",
   "repository_target": "https://github.com/elexlebron-spec/cscwd-3",
-  "snapshot_resolution": "Use the exact Git commit cited in the manuscript; no DOI is claimed"
+  "snapshot_resolution": "Use the exact commit cited by the revised manuscript"
 }

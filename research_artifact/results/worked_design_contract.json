@@ -1,0 +1,167 @@
+{
+  "status": "CONSTRUCTED_CONTRACT_COMPARISON_NOT_PERFORMANCE_DATA",
+  "contract": {
+    "payload_access": "Read-only local review cache; payload importer disabled between gates",
+    "metadata_access": "Published-version notifications remain visible; their cost is assumed separate",
+    "review_times": "Appointments fixed and announced at import, not predicted execution times",
+    "latest_rule": "Mark a review superseded when any eligible published input has advanced",
+    "frozen_rule": "Assess reproducibility against an agreed import manifest instead",
+    "rationale": "Explicit local batch-review policy. Product documentation does not impose it.",
+    "units": "Constructed window/cost units; not calibrated to a week, bytes or labor"
+  },
+  "results": [
+    {
+      "import_action": "budgeted",
+      "review": "architecture_structure_review",
+      "use_time": 0.2,
+      "local_versions": [
+        1,
+        1
+      ],
+      "manifest_versions": [
+        1,
+        1
+      ],
+      "latest_versions": [
+        1,
+        1
+      ],
+      "latest_published_gate": true,
+      "frozen_manifest_gate": true,
+      "copied_input_ids": [
+        0,
+        1
+      ],
+      "import_cost": 2
+    },
+    {
+      "import_action": "budgeted",
+      "review": "structure_services_review",
+      "use_time": 0.6,
+      "local_versions": [
+        1,
+        0
+      ],
+      "manifest_versions": [
+        1,
+        1
+      ],
+      "latest_versions": [
+        2,
+        1
+      ],
+      "latest_published_gate": false,
+      "frozen_manifest_gate": false,
+      "copied_input_ids": [
+        0,
+        1
+      ],
+      "import_cost": 2
+    },
+    {
+      "import_action": "budgeted",
+      "review": "combined_review",
+      "use_time": 0.8,
+      "local_versions": [
+        1,
+        1,
+        0
+      ],
+      "manifest_versions": [
+        1,
+        1,
+        1
+      ],
+      "latest_versions": [
+        1,
+        2,
+        2
+      ],
+      "latest_published_gate": false,
+      "frozen_manifest_gate": false,
+      "copied_input_ids": [
+        0,
+        1
+      ],
+      "import_cost": 2
+    },
+    {
+      "import_action": "all_unconstrained",
+      "review": "architecture_structure_review",
+      "use_time": 0.2,
+      "local_versions": [
+        1,
+        1
+      ],
+      "manifest_versions": [
+        1,
+        1
+      ],
+      "latest_versions": [
+        1,
+        1
+      ],
+      "latest_published_gate": true,
+      "frozen_manifest_gate": true,
+      "copied_input_ids": [
+        0,
+        1,
+        2
+      ],
+      "import_cost": 3
+    },
+    {
+      "import_action": "all_unconstrained",
+      "review": "structure_services_review",
+      "use_time": 0.6,
+      "local_versions": [
+        1,
+        1
+      ],
+      "manifest_versions": [
+        1,
+        1
+      ],
+      "latest_versions": [
+        2,
+        1
+      ],
+      "latest_published_gate": false,
+      "frozen_manifest_gate": true,
+      "copied_input_ids": [
+        0,
+        1,
+        2
+      ],
+      "import_cost": 3
+    },
+    {
+      "import_action": "all_unconstrained",
+      "review": "combined_review",
+      "use_time": 0.8,
+      "local_versions": [
+        1,
+        1,
+        1
+      ],
+      "manifest_versions": [
+        1,
+        1,
+        1
+      ],
+      "latest_versions": [
+        1,
+        2,
+        2
+      ],
+      "latest_published_gate": false,
+      "frozen_manifest_gate": true,
+      "copied_input_ids": [
+        0,
+        1,
+        2
+      ],
+      "import_cost": 3
+    }
+  ]
+}

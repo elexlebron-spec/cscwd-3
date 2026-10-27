@@ -24,6 +24,14 @@
 
 原型没有把每周四直接换算成实验中的一个时间单位。成本、更新强度与延迟没有用案例数据校准。
 
+## 本轮补充：可执行运行契约与反向对照
+
+当前没有团队版本发布日志、实际评审等待时间或下载成本记录，因此不进行所谓“真实更新率校准”。新增细节用于明确原型如何运行：载荷导入器只在批次闸口开放；随后检查器只读本地缓存，版本通知通道仍可报告新发布；评审时隙在导入时作为预约表给定。禁止即时补取来自这一局部运行契约，而非声称网络或Autodesk产品无法下载。严格规则表示“此检查是否仍反映最新合格发布”，并不表示旧版本上的几何结论必然错误。
+
+官方文档还明确支持团队选择消费的版本，以及受控消费、共享文件夹链接、实时链接等不同模式。该事实是本文适用性的边界：不能把严格最新版本规则推广为BIM行业要求。[官方模型链接说明](https://help.autodesk.com/cloudhelp/ENU/Collab-GS/files/getting-started-with-bim-collaborate-pro/collaborate-for-civil-3d/Design_Collab_for_civil_3d.html)；[官方Revit共享模式](https://help.autodesk.com/cloudhelp/ENU/Collab-Models/files/Design_Collab_Share_Revit_Models.html)。
+
+运行`python3 scripts/run_design_contract.py`，得到`results/worked_design_contract.json`。同一组导入、版本更新和预约时间分别按严格最新发布与冻结导入清单评价。全量起点导入在严格规则下只通过第一次检查，在冻结清单规则下三次均通过。后者改变有效性目标，不能称为在原freshness指标上提升性能。这个反向对照使假设依赖可执行、可核查；它仍不是实际CAD计算、现场验证或新增确认性性能实验。
+
 ## 可运行的版本示例
 
 运行：
