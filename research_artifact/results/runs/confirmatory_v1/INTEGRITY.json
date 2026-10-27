@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "policy_traces": 1760,
+  "event_streams": 160,
+  "policy_windows": 52800,
+  "checks": [
+    "frozen_config_code_data_hashes",
+    "freeze_precedes_test_run",
+    "test_seeds_disjoint_from_validation",
+    "all_trace_hashes",
+    "all_budgets",
+    "all_window_aggregates",
+    "all_sync_pointwise_dominance"
+  ],
+  "clean_directory_replays": {
+    "seed": 100,
+    "method": "sabs_partial",
+    "cases": [
+      "synthetic_mu0.5",
+      "public_seismology",
+      "public_montage"
+    ],
+    "actions_and_freshness_match": true
+  },
+  "checked_utc": "2026-10-27T13:10:10.653028+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "CONSTRUCTED_WORKED_SCENARIO_NOT_INDUSTRIAL_EVIDENCE",
+  "artifact_names": ["architecture_model", "structure_model", "services_model"],
+  "tasks": [
+    {"name": "architecture_structure_review", "inputs": [0, 1], "use_delay": 0.2},
+    {"name": "structure_services_review", "inputs": [1, 2], "use_delay": 0.6},
+    {"name": "combined_review", "inputs": [0, 1, 2], "use_delay": 0.8}
+  ],
+  "costs": [1, 1, 1],
+  "budget": 2,
+  "history_events": [[-0.5], [-0.5], [-0.5]],
+  "future_events": [[], [0.4], [0.7]],
+  "initial_cache_counters": [0, 0, 0],
+  "fixed_budgeted_action": [0, 1],
+  "assumptions": [
+    "Inputs refer to eligible published discipline artifacts, not every unsaved edit",
+    "Local import gate closes at time zero; review appointments are announced then",
+    "No mid-window fetches; metadata can flag a revision",
+    "Strict version gate is a prototype policy, not a BIM product requirement",
+    "Only version eligibility is checked; no CAD geometry is loaded or tested"
+  ]
+}

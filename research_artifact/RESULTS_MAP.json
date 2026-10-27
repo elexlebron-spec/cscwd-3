@@ -1,0 +1,19 @@
+{
+  "paper_title": "When Priority Changes Fail to Improve Task-Input Freshness",
+  "run": "results/runs/confirmatory_v1",
+  "confirmatory_protocol": "configs/confirmatory.json",
+  "confirmatory_source_lock": "configs/confirmatory.lock.json",
+  "table_I": "data/public/manifest.json",
+  "table_II": ["analysis/mean_freshness_percent.csv", "analysis/paired_differences.csv", "analysis/trace_summary.csv"],
+  "figure_1": "analysis/mechanism_by_seed.csv",
+  "figure_2": "analysis/mean_freshness_percent.csv",
+  "figure_3": "analysis/analysis.json#public_strata",
+  "solver_timing": "analysis/paired_solver_timing.csv",
+  "post_hoc_survival_bound": "analysis/revision_diagnostics.json",
+  "analysis_entry_point": "scripts/analyze_confirmatory.py",
+  "post_hoc_entry_point": "scripts/analyze_revision.py",
+  "verification_entry_point": "python3 scripts/verify_confirmatory.py --replay",
+  "worked_scenario": "configs/worked_design_case.json",
+  "repository_target": "https://github.com/elexlebron-spec/cscwd-3",
+  "snapshot_resolution": "Use the exact Git commit cited in the manuscript; no DOI is claimed"
+}

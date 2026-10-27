@@ -1,0 +1,13 @@
+{
+  "phase": "validation_only_followup_before_test",
+  "reason": "all_60_MILPs_optimal_and_small_runtime_requires_same_snapshot_timing_and_dynamic_solver_check",
+  "seeds": [0, 1, 2, 3, 4],
+  "cases": ["synthetic_mu0.5", "public_montage"],
+  "budget_fraction": 0.1,
+  "windows": 30,
+  "weight_modes": ["survival", "no_survival"],
+  "solver_limit_seconds": 1.0,
+  "same_snapshot_timing_repetitions": 3,
+  "held_out_test_seeds_used": false,
+  "does_not_replace_v2_core_protocol": true
+}

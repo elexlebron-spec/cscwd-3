@@ -1,0 +1,218 @@
+{
+  "version": "2_review_revised",
+  "status": "VALIDATION_COMPLETED_CONFIRMATORY_NOT_FROZEN",
+  "timezone": "Asia/Shanghai",
+  "target_internal_finish": "2026-10-30",
+  "conference_deadline_date_only": "2026-10-31",
+  "conference_deadline_timezone": "UNVERIFIED",
+  "platform": "CPU_MacBookPro",
+  "research_position": "empirical_conditions_and_failure_boundaries_not_new_SUKP_algorithm",
+  "validation_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "test_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "main": {
+    "files": 100,
+    "tasks": 100,
+    "inputs_per_task": 4,
+    "history_duration": 100,
+    "windows": 30,
+    "window_duration": 1,
+    "task_weight": 1,
+    "cost_integer_range": [
+      1,
+      5
+    ],
+    "budget_fraction_of_all_file_costs": [
+      0.05,
+      0.1,
+      0.25
+    ],
+    "mean_update_rates": [
+      0.1,
+      0.5
+    ],
+    "rate_distribution": {
+      "family": "lognormal_normalized_to_exact_sample_mean",
+      "population_cv": 1.0,
+      "formula": "sigma=sqrt(log(1+cv^2)); z_i=exp(sigma*N_i-sigma^2/2); lambda_i=mu*z_i/mean(z)"
+    },
+    "sharing_generator": {
+      "family": "fixed_shared_pool_without_replacement",
+      "shared_pool_ids": [
+        0,
+        19
+      ],
+      "inputs_from_shared_pool": 2,
+      "inputs_from_other_files": 2,
+      "task_sets_fixed_across_windows": true
+    },
+    "use_delay": {
+      "family": "uniform",
+      "minimum": 0.1,
+      "maximum": 0.9
+    },
+    "history_estimator": {
+      "family": "cumulative_count_over_observed_duration",
+      "smoothing": 0
+    },
+    "initial_cache": "all_source_versions_current_at_evaluation_start",
+    "rng_streams": [
+      "structure",
+      "costs",
+      "rates",
+      "delays",
+      "history_events",
+      "future_events",
+      "policy_random"
+    ]
+  },
+  "mechanism_slice": {
+    "budget_fraction": 0.1,
+    "mean_update_rate": 0.5,
+    "population_cv": [
+      0.0,
+      1.0
+    ],
+    "delay_models": [
+      "fixed_0.5",
+      "uniform_0.1_0.9"
+    ],
+    "same_snapshot_comparisons": true,
+    "exact_equal_q_fixture_required": true,
+    "report_estimated_and_true_q_dispersion_separately": true,
+    "reuse_identical_main_condition": true
+  },
+  "common_shock_slice": {
+    "budget_fraction": 0.1,
+    "mean_update_rate": 0.5,
+    "population_cv": 1.0,
+    "team_assignment": "file_id_integer_division_10",
+    "eta": [
+      0.0,
+      0.5
+    ],
+    "group_shock_rate": "kappa_g=eta*min(lambda_i for i in group_g)",
+    "independent_residual_rate": "lambda_i-kappa_group(i)",
+    "preserve_file_marginal_update_rates": true,
+    "independent_estimator_used_by_policy": true
+  },
+  "public_data": {
+    "repository": "https://github.com/wfcommons/WfInstances",
+    "family_priority": [
+      "pegasus/seismology",
+      "pegasus/montage"
+    ],
+    "instances_per_family": 1,
+    "selection": "smallest_full_instance_by_input_file_count_then_task_count_then_path",
+    "max_input_files": 2000,
+    "max_tasks": 1000,
+    "preserve_complete_task_input_structure": true,
+    "keep_unused_output_files_in_provenance_exclude_from_sync_universe": true,
+    "budget_fraction": 0.1,
+    "mean_update_rate": 0.5,
+    "population_cv": 1.0,
+    "failure_action": "record_and_pause_public_evidence_claim_no_silent_subgraph_sampling"
+  },
+  "main_methods": [
+    "random",
+    "oldest_first",
+    "item_no_survival",
+    "item_utility",
+    "bundle_no_survival_partial",
+    "sabs_partial",
+    "always_sync_unconstrained"
+  ],
+  "legacy_scope": "counterexamples_and_pilot_fallback_ablation_only",
+  "fallback": {
+    "enabled_in_both_bundle_variants": true,
+    "rule": "recomputed_remaining_task_profit_share_per_cost",
+    "stage": "after_bundle_and_best_single_guard",
+    "long_term_optimality_claim": false
+  },
+  "milp_time_limit_seconds": 1.0,
+  "milp_scope": {
+    "budget_fractions": [
+      0.05,
+      0.1
+    ],
+    "mean_update_rate": 0.5,
+    "seeds": [
+      100,
+      101,
+      102
+    ],
+    "windows": 5,
+    "weight_modes": [
+      "survival",
+      "no_survival"
+    ],
+    "total_max_solves": 60,
+    "purpose": "same_snapshot_quality_and_time_not_dynamic_policy_ranking"
+  },
+  "required_regressions": [
+    "two_files_two_windows_budget_one",
+    "oversized_bundle",
+    "individually_unaffordable_file",
+    "equal_nonunit_q_same_action",
+    "partial_progress_invalidated",
+    "same_snapshot_action_difference"
+  ],
+  "optional_deferred": [
+    "input_arity_sweep",
+    "sharing_sweep",
+    "estimator_bias_sweep",
+    "partial_reward_model",
+    "large_scale_sweep",
+    "on_demand_policy",
+    "full_I2PLS_adaptation"
+  ],
+  "algorithm_competitiveness_claim_requires": "faithful_existing_SUKP_baseline_adaptation_beyond_current_required_scope",
+  "exhaustive_max_stale_files": 18,
+  "bootstrap_replicates": 10000,
+  "confidence_level": 0.95,
+  "max_initial_workers": 2,
+  "primary_metric": "trace_weighted_fresh_task_fraction",
+  "mechanism_metrics": [
+    "estimated_q_cv",
+    "true_q_cv_diagnostic_only",
+    "same_snapshot_action_difference_fraction",
+    "same_snapshot_jaccard_distance",
+    "paired_realized_freshness_delta",
+    "fraction_of_epochs_with_unaffordable_missing_bundles"
+  ],
+  "data_status": "PUBLIC_TWO_FAMILIES_DOWNLOADED_PARSED_HASHED",
+  "future_trace_visible_to_policy": false,
+  "pilot_evidence": {
+    "run": "results/runs/phase1_pilot_v1",
+    "validation_seeds_only": true,
+    "historical_protocol_sha256": "f07e943196dbe320c7ffe889ab2fd095e78ee1b840ce4d96e069277c842029bf",
+    "historical_source_snapshot": "results/runs/phase1_pilot_v1/source_snapshot",
+    "solver_supplement": "results/runs/phase1_solver_supplement_v1"
+  }
+}

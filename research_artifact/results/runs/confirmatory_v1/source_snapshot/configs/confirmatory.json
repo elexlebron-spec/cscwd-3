@@ -1,0 +1,180 @@
+{
+  "version": "confirmatory_v1",
+  "status": "FROZEN_BEFORE_HELD_OUT_RUN",
+  "run_id": "confirmatory_v1",
+  "frozen_utc": "2026-10-27T12:48:02.957494+00:00",
+  "scope": "held_out_empirical_conditions_not_algorithm_novelty",
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "excluded_validation_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "windows": 30,
+  "history_duration": 100,
+  "cases": [
+    {
+      "id": "synthetic_mu0.1",
+      "structure": "synthetic",
+      "mean_rate": 0.1,
+      "cv": 1.0,
+      "delay_mode": "uniform",
+      "eta": 0.0,
+      "budgets": [
+        0.05,
+        0.1,
+        0.25
+      ]
+    },
+    {
+      "id": "synthetic_mu0.5",
+      "structure": "synthetic",
+      "mean_rate": 0.5,
+      "cv": 1.0,
+      "delay_mode": "uniform",
+      "eta": 0.0,
+      "budgets": [
+        0.05,
+        0.1,
+        0.25
+      ]
+    },
+    {
+      "id": "mechanism_cv0.0_fixed",
+      "structure": "synthetic",
+      "mean_rate": 0.5,
+      "cv": 0.0,
+      "delay_mode": "fixed",
+      "eta": 0.0,
+      "budgets": [
+        0.1
+      ]
+    },
+    {
+      "id": "mechanism_cv0.0_uniform",
+      "structure": "synthetic",
+      "mean_rate": 0.5,
+      "cv": 0.0,
+      "delay_mode": "uniform",
+      "eta": 0.0,
+      "budgets": [
+        0.1
+      ]
+    },
+    {
+      "id": "mechanism_cv1.0_fixed",
+      "structure": "synthetic",
+      "mean_rate": 0.5,
+      "cv": 1.0,
+      "delay_mode": "fixed",
+      "eta": 0.0,
+      "budgets": [
+        0.1
+      ]
+    },
+    {
+      "id": "common_shock_eta0.5",
+      "structure": "synthetic",
+      "mean_rate": 0.5,
+      "cv": 1.0,
+      "delay_mode": "uniform",
+      "eta": 0.5,
+      "budgets": [
+        0.1
+      ]
+    },
+    {
+      "id": "public_seismology",
+      "structure": "seismology",
+      "mean_rate": 0.5,
+      "cv": 1.0,
+      "delay_mode": "uniform",
+      "eta": 0.0,
+      "budgets": [
+        0.1
+      ]
+    },
+    {
+      "id": "public_montage",
+      "structure": "montage",
+      "mean_rate": 0.5,
+      "cv": 1.0,
+      "delay_mode": "uniform",
+      "eta": 0.0,
+      "budgets": [
+        0.1
+      ]
+    }
+  ],
+  "methods": [
+    "random",
+    "oldest_first",
+    "item_no_survival",
+    "item_utility",
+    "bundle_no_survival_partial",
+    "sabs_partial",
+    "always_sync_unconstrained"
+  ],
+  "dynamic_solver": {
+    "cases": [
+      "synthetic_mu0.5",
+      "public_montage"
+    ],
+    "budget_fraction": 0.1,
+    "profit_modes": [
+      "survival",
+      "no_survival"
+    ],
+    "action_rule": "raw HiGHS incumbent, no extra tie-break, no partial fallback",
+    "no_incumbent_rule": "empty feasible action and explicit failure count",
+    "matches_validation_supplement": true
+  },
+  "static_solver_slice": {
+    "case": "synthetic_mu0.5",
+    "budgets": [
+      0.05,
+      0.1
+    ],
+    "seeds": [
+      100,
+      101,
+      102
+    ],
+    "windows": 5
+  },
+  "solver_limit_seconds": 1.0,
+  "timing_repetitions": 3,
+  "bootstrap_replicates": 10000,
+  "confidence": 0.95,
+  "comparison_unit": "complete paired trace, not individual task/window",
+  "primary_comparisons": [
+    "sabs_partial minus bundle_no_survival_partial",
+    "sabs_partial minus item_utility"
+  ],
+  "expected_policy_traces": 1760,
+  "validation_informed_amendment": "two fixed dynamic-MILP conditions retained after validation; no sweep added",
+  "policy_changes_after_test_start": false
+}

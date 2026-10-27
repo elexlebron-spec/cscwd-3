@@ -1,0 +1,87 @@
+{
+  "status": "CONSTRUCTED_WORKED_SCENARIO_NOT_INDUSTRIAL_EVIDENCE",
+  "purpose": "Illustrate application mapping, not measure algorithm performance",
+  "rates": "No rates are estimated or used; events and action are explicitly constructed",
+  "source_at_import": [
+    1,
+    1,
+    1
+  ],
+  "assumptions": [
+    "Inputs refer to eligible published discipline artifacts, not every unsaved edit",
+    "Local import gate closes at time zero; review appointments are announced then",
+    "No mid-window fetches; metadata can flag a revision",
+    "Strict version gate is a prototype policy, not a BIM product requirement",
+    "Only version eligibility is checked; no CAD geometry is loaded or tested"
+  ],
+  "actions": [
+    {
+      "action": "fixed_budgeted_import",
+      "copied_inputs": [
+        "architecture_model",
+        "structure_model"
+      ],
+      "cost": 2,
+      "checks": [
+        {
+          "task": "architecture_structure_review",
+          "use_delay": 0.2,
+          "fresh": true,
+          "outdated_or_missing_inputs": []
+        },
+        {
+          "task": "structure_services_review",
+          "use_delay": 0.6,
+          "fresh": false,
+          "outdated_or_missing_inputs": [
+            "structure_model",
+            "services_model"
+          ]
+        },
+        {
+          "task": "combined_review",
+          "use_delay": 0.8,
+          "fresh": false,
+          "outdated_or_missing_inputs": [
+            "structure_model",
+            "services_model"
+          ]
+        }
+      ]
+    },
+    {
+      "action": "all_boundary_import_unconstrained",
+      "copied_inputs": [
+        "architecture_model",
+        "structure_model",
+        "services_model"
+      ],
+      "cost": 3,
+      "checks": [
+        {
+          "task": "architecture_structure_review",
+          "use_delay": 0.2,
+          "fresh": true,
+          "outdated_or_missing_inputs": []
+        },
+        {
+          "task": "structure_services_review",
+          "use_delay": 0.6,
+          "fresh": false,
+          "outdated_or_missing_inputs": [
+            "structure_model"
+          ]
+        },
+        {
+          "task": "combined_review",
+          "use_delay": 0.8,
+          "fresh": false,
+          "outdated_or_missing_inputs": [
+            "structure_model",
+            "services_model"
+          ]
+        }
+      ]
+    }
+  ]
+}

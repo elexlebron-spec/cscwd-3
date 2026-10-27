@@ -1,0 +1,3312 @@
+{
+  "summary": {
+    "method": "sabs_partial",
+    "seed": 4,
+    "structure": "synthetic",
+    "budget_fraction": 0.1,
+    "fresh_fraction": 0.194,
+    "nonempty_fresh_fraction": 0.194,
+    "sync_cost": 841.0,
+    "invalidated_unused_cost": 155.0,
+    "invalidated_unused_cost_fraction": 0.18430439952437574,
+    "pending_unused_cost_at_end": 3,
+    "decision_seconds": [
+      0.00023845899999841436,
+      0.0033267079999994564,
+      0.0044699999999977535,
+      0.0037860409999979083,
+      0.005303833999999341,
+      0.005074167000000074,
+      0.005625290999997645,
+      0.004780207999999675,
+      0.005691542000000993,
+      0.00493158299999763,
+      0.005032750000001585,
+      0.005957584000000793,
+      0.005286166000001202,
+      0.004978499999999997,
+      0.006162416999998754,
+      0.007004375000001062,
+      0.0056211669999974845,
+      0.0033785420000000954,
+      0.0055566660000003765,
+      0.00676812500000068,
+      0.0053619999999980905,
+      0.005386542000000105,
+      0.007120167000000066,
+      0.006497583999998113,
+      0.0057578750000004675,
+      0.007901125000000064,
+      0.006489833999999917,
+      0.005459999999999354,
+      0.006284042000000767,
+      0.004435915999998485
+    ]
+  },
+  "windows": [
+    {
+      "window": 0,
+      "fresh_fraction": 0.56,
+      "nonempty_fresh_fraction": 0.56,
+      "sync_cost": 0,
+      "selected_files": [],
+      "stale_files": 0,
+      "decision_seconds": 0.00023845899999841436,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 1,
+      "fresh_fraction": 0.34,
+      "nonempty_fresh_fraction": 0.34,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        9,
+        11,
+        15,
+        22,
+        30,
+        46,
+        47,
+        52,
+        67,
+        79,
+        90,
+        97
+      ],
+      "stale_files": 30,
+      "decision_seconds": 0.0033267079999994564,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 2,
+      "fresh_fraction": 0.28,
+      "nonempty_fresh_fraction": 0.28,
+      "sync_cost": 29,
+      "selected_files": [
+        2,
+        8,
+        9,
+        13,
+        15,
+        22,
+        32,
+        34,
+        41,
+        46,
+        50,
+        78,
+        85,
+        95,
+        97
+      ],
+      "stale_files": 40,
+      "decision_seconds": 0.0044699999999977535,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 3,
+      "fresh_fraction": 0.28,
+      "nonempty_fresh_fraction": 0.28,
+      "sync_cost": 29,
+      "selected_files": [
+        2,
+        4,
+        9,
+        11,
+        16,
+        24,
+        41,
+        50,
+        53,
+        63,
+        99
+      ],
+      "stale_files": 42,
+      "decision_seconds": 0.0037860409999979083,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 4,
+      "fresh_fraction": 0.25,
+      "nonempty_fresh_fraction": 0.25,
+      "sync_cost": 29,
+      "selected_files": [
+        0,
+        6,
+        9,
+        18,
+        47,
+        50,
+        51,
+        52,
+        53,
+        61,
+        66,
+        78,
+        84,
+        85,
+        97
+      ],
+      "stale_files": 57,
+      "decision_seconds": 0.005303833999999341,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 5,
+      "fresh_fraction": 0.21,
+      "nonempty_fresh_fraction": 0.21,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        4,
+        8,
+        9,
+        18,
+        22,
+        35,
+        58,
+        60,
+        63,
+        66,
+        85,
+        95
+      ],
+      "stale_files": 54,
+      "decision_seconds": 0.005074167000000074,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 6,
+      "fresh_fraction": 0.16,
+      "nonempty_fresh_fraction": 0.16,
+      "sync_cost": 29,
+      "selected_files": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        9,
+        11,
+        19,
+        22,
+        60,
+        61,
+        67,
+        85,
+        98
+      ],
+      "stale_files": 63,
+      "decision_seconds": 0.005625290999997645,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 7,
+      "fresh_fraction": 0.19,
+      "nonempty_fresh_fraction": 0.19,
+      "sync_cost": 29,
+      "selected_files": [
+        4,
+        7,
+        9,
+        11,
+        16,
+        20,
+        22,
+        34,
+        48,
+        66,
+        84,
+        97
+      ],
+      "stale_files": 62,
+      "decision_seconds": 0.004780207999999675,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 8,
+      "fresh_fraction": 0.19,
+      "nonempty_fresh_fraction": 0.19,
+      "sync_cost": 29,
+      "selected_files": [
+        0,
+        6,
+        9,
+        15,
+        21,
+        27,
+        34,
+        35,
+        50,
+        66,
+        67,
+        71,
+        93
+      ],
+      "stale_files": 59,
+      "decision_seconds": 0.005691542000000993,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 9,
+      "fresh_fraction": 0.17,
+      "nonempty_fresh_fraction": 0.17,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        4,
+        6,
+        7,
+        9,
+        10,
+        17,
+        19,
+        44,
+        46,
+        80,
+        85
+      ],
+      "stale_files": 62,
+      "decision_seconds": 0.00493158299999763,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 10,
+      "fresh_fraction": 0.15,
+      "nonempty_fresh_fraction": 0.15,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        9,
+        12,
+        15,
+        16,
+        47,
+        50,
+        60,
+        86,
+        87,
+        97,
+        98
+      ],
+      "stale_files": 59,
+      "decision_seconds": 0.005032750000001585,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 11,
+      "fresh_fraction": 0.15,
+      "nonempty_fresh_fraction": 0.15,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        4,
+        5,
+        9,
+        10,
+        15,
+        16,
+        22,
+        30,
+        79,
+        99
+      ],
+      "stale_files": 64,
+      "decision_seconds": 0.005957584000000793,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 12,
+      "fresh_fraction": 0.18,
+      "nonempty_fresh_fraction": 0.18,
+      "sync_cost": 29,
+      "selected_files": [
+        2,
+        4,
+        7,
+        9,
+        10,
+        18,
+        19,
+        24,
+        39,
+        47,
+        53,
+        79,
+        85
+      ],
+      "stale_files": 61,
+      "decision_seconds": 0.005286166000001202,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 13,
+      "fresh_fraction": 0.14,
+      "nonempty_fresh_fraction": 0.14,
+      "sync_cost": 29,
+      "selected_files": [
+        4,
+        11,
+        16,
+        18,
+        22,
+        23,
+        41,
+        44,
+        52,
+        67,
+        88,
+        90
+      ],
+      "stale_files": 64,
+      "decision_seconds": 0.004978499999999997,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 14,
+      "fresh_fraction": 0.15,
+      "nonempty_fresh_fraction": 0.15,
+      "sync_cost": 29,
+      "selected_files": [
+        2,
+        4,
+        10,
+        16,
+        20,
+        41,
+        44,
+        46,
+        47,
+        53,
+        60,
+        67,
+        79,
+        85,
+        87
+      ],
+      "stale_files": 67,
+      "decision_seconds": 0.006162416999998754,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 15,
+      "fresh_fraction": 0.14,
+      "nonempty_fresh_fraction": 0.14,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        4,
+        10,
+        16,
+        20,
+        22,
+        24,
+        26,
+        46,
+        50,
+        53,
+        60,
+        66,
+        71,
+        98
+      ],
+      "stale_files": 70,
+      "decision_seconds": 0.007004375000001062,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 16,
+      "fresh_fraction": 0.28,
+      "nonempty_fresh_fraction": 0.28,
+      "sync_cost": 29,
+      "selected_files": [
+        4,
+        8,
+        9,
+        10,
+        11,
+        18,
+        22,
+        23,
+        34,
+        49,
+        50,
+        60,
+        61,
+        79
+      ],
+      "stale_files": 65,
+      "decision_seconds": 0.0056211669999974845,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 17,
+      "fresh_fraction": 0.25,
+      "nonempty_fresh_fraction": 0.25,
+      "sync_cost": 29,
+      "selected_files": [
+        11,
+        15,
+        26,
+        30,
+        39,
+        48,
+        53,
+        63,
+        86,
+        97
+      ],
+      "stale_files": 58,
+      "decision_seconds": 0.0033785420000000954,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 18,
+      "fresh_fraction": 0.16,
+      "nonempty_fresh_fraction": 0.16,
+      "sync_cost": 29,
+      "selected_files": [
+        4,
+        8,
+        22,
+        30,
+        37,
+        48,
+        50,
+        66,
+        71,
+        78,
+        86,
+        87,
+        98
+      ],
+      "stale_files": 60,
+      "decision_seconds": 0.0055566660000003765,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 19,
+      "fresh_fraction": 0.18,
+      "nonempty_fresh_fraction": 0.18,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        9,
+        15,
+        22,
+        30,
+        52,
+        61,
+        67,
+        85,
+        97
+      ],
+      "stale_files": 62,
+      "decision_seconds": 0.00676812500000068,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 20,
+      "fresh_fraction": 0.2,
+      "nonempty_fresh_fraction": 0.2,
+      "sync_cost": 29,
+      "selected_files": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        11,
+        15,
+        30,
+        51,
+        66,
+        67,
+        84,
+        97
+      ],
+      "stale_files": 61,
+      "decision_seconds": 0.0053619999999980905,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 21,
+      "fresh_fraction": 0.17,
+      "nonempty_fresh_fraction": 0.17,
+      "sync_cost": 29,
+      "selected_files": [
+        4,
+        15,
+        18,
+        19,
+        21,
+        39,
+        46,
+        60,
+        61,
+        67,
+        85,
+        97
+      ],
+      "stale_files": 63,
+      "decision_seconds": 0.005386542000000105,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 22,
+      "fresh_fraction": 0.14,
+      "nonempty_fresh_fraction": 0.14,
+      "sync_cost": 29,
+      "selected_files": [
+        2,
+        4,
+        9,
+        10,
+        39,
+        41,
+        46,
+        47,
+        49,
+        50,
+        61,
+        66,
+        71,
+        79,
+        87,
+        95
+      ],
+      "stale_files": 71,
+      "decision_seconds": 0.007120167000000066,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 23,
+      "fresh_fraction": 0.15,
+      "nonempty_fresh_fraction": 0.15,
+      "sync_cost": 29,
+      "selected_files": [
+        0,
+        1,
+        4,
+        6,
+        10,
+        18,
+        19,
+        20,
+        22,
+        23,
+        48,
+        60,
+        61,
+        66,
+        97
+      ],
+      "stale_files": 72,
+      "decision_seconds": 0.006497583999998113,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 24,
+      "fresh_fraction": 0.08,
+      "nonempty_fresh_fraction": 0.08,
+      "sync_cost": 29,
+      "selected_files": [
+        0,
+        1,
+        4,
+        8,
+        9,
+        15,
+        19,
+        20,
+        22,
+        23,
+        24,
+        47,
+        85,
+        87
+      ],
+      "stale_files": 69,
+      "decision_seconds": 0.0057578750000004675,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 25,
+      "fresh_fraction": 0.09,
+      "nonempty_fresh_fraction": 0.09,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        8,
+        18,
+        21,
+        41,
+        47,
+        50,
+        52,
+        60,
+        61,
+        62,
+        63,
+        66,
+        71,
+        79,
+        98
+      ],
+      "stale_files": 75,
+      "decision_seconds": 0.007901125000000064,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 26,
+      "fresh_fraction": 0.18,
+      "nonempty_fresh_fraction": 0.18,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        4,
+        10,
+        19,
+        22,
+        44,
+        46,
+        47,
+        50,
+        60,
+        61,
+        66,
+        67,
+        87,
+        97
+      ],
+      "stale_files": 70,
+      "decision_seconds": 0.006489833999999917,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 27,
+      "fresh_fraction": 0.17,
+      "nonempty_fresh_fraction": 0.17,
+      "sync_cost": 29,
+      "selected_files": [
+        0,
+        9,
+        15,
+        17,
+        18,
+        19,
+        22,
+        41,
+        50,
+        66,
+        95,
+        97,
+        98
+      ],
+      "stale_files": 66,
+      "decision_seconds": 0.005459999999999354,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 28,
+      "fresh_fraction": 0.09,
+      "nonempty_fresh_fraction": 0.09,
+      "sync_cost": 29,
+      "selected_files": [
+        0,
+        1,
+        2,
+        4,
+        9,
+        16,
+        19,
+        24,
+        37,
+        63,
+        78,
+        84,
+        85
+      ],
+      "stale_files": 66,
+      "decision_seconds": 0.006284042000000767,
+      "zero_current_gain_action": false
+    },
+    {
+      "window": 29,
+      "fresh_fraction": 0.14,
+      "nonempty_fresh_fraction": 0.14,
+      "sync_cost": 29,
+      "selected_files": [
+        1,
+        4,
+        10,
+        16,
+        17,
+        18,
+        22,
+        53,
+        67,
+        79,
+        95
+      ],
+      "stale_files": 69,
+      "decision_seconds": 0.004435915999998485,
+      "zero_current_gain_action": false
+    }
+  ],
+  "diagnostics": [
+    {
+      "actions": {
+        "sabs_partial": [],
+        "bundle_no_survival_partial": [],
+        "item_utility": [],
+        "item_no_survival": []
+      },
+      "estimated_q": {
+        "mean": 0.4344155706596545,
+        "std": 0.2317368425203897,
+        "cv": 0.5334450654439026
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": false,
+          "jaccard_distance": 0.0,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": false,
+          "jaccard_distance": 0.0,
+          "realized_freshness_delta": 0.0
+        }
+      },
+      "window": 0,
+      "true_q_mean_diagnostic": 0.4395636304377291,
+      "true_q_cv_diagnostic": 0.5310890939076666,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          9,
+          11,
+          15,
+          22,
+          30,
+          46,
+          47,
+          52,
+          67,
+          79,
+          90,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          9,
+          11,
+          13,
+          15,
+          22,
+          46,
+          47,
+          52,
+          78,
+          79,
+          90,
+          97
+        ],
+        "item_utility": [
+          1,
+          9,
+          11,
+          15,
+          16,
+          22,
+          46,
+          47,
+          52,
+          67,
+          90,
+          97
+        ],
+        "item_no_survival": [
+          1,
+          9,
+          11,
+          13,
+          15,
+          22,
+          46,
+          47,
+          52,
+          78,
+          79,
+          90,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.42934808996340723,
+        "std": 0.2261539663754404,
+        "cv": 0.526738028332012
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.2666666666666667,
+          "realized_freshness_delta": 0.03
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.2142857142857143,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 1,
+      "true_q_mean_diagnostic": 0.4352731722258505,
+      "true_q_cv_diagnostic": 0.5112431416403435,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          2,
+          8,
+          9,
+          13,
+          15,
+          22,
+          32,
+          34,
+          41,
+          46,
+          50,
+          78,
+          85,
+          95,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          2,
+          8,
+          9,
+          13,
+          15,
+          22,
+          32,
+          34,
+          41,
+          46,
+          50,
+          78,
+          85,
+          95,
+          97
+        ],
+        "item_utility": [
+          2,
+          8,
+          9,
+          15,
+          19,
+          22,
+          34,
+          41,
+          46,
+          50,
+          78,
+          85,
+          95,
+          97
+        ],
+        "item_no_survival": [
+          2,
+          8,
+          9,
+          13,
+          15,
+          19,
+          22,
+          34,
+          41,
+          46,
+          50,
+          78,
+          85,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4644096680000772,
+        "std": 0.2329345155753545,
+        "cv": 0.5015712023792661
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": false,
+          "jaccard_distance": 0.0,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.1875,
+          "realized_freshness_delta": -0.01
+        }
+      },
+      "window": 2,
+      "true_q_mean_diagnostic": 0.4698745473154141,
+      "true_q_cv_diagnostic": 0.4906552921882622,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          2,
+          4,
+          9,
+          11,
+          16,
+          24,
+          41,
+          50,
+          53,
+          63,
+          99
+        ],
+        "bundle_no_survival_partial": [
+          2,
+          4,
+          9,
+          11,
+          13,
+          16,
+          24,
+          41,
+          50,
+          53,
+          78,
+          88
+        ],
+        "item_utility": [
+          2,
+          4,
+          9,
+          11,
+          16,
+          19,
+          24,
+          41,
+          50,
+          51,
+          68
+        ],
+        "item_no_survival": [
+          2,
+          4,
+          9,
+          11,
+          13,
+          16,
+          19,
+          24,
+          41,
+          50,
+          51,
+          78
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4554356625808552,
+        "std": 0.20188761965499682,
+        "cv": 0.4432846090948246
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.3571428571428571,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4285714285714286,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 3,
+      "true_q_mean_diagnostic": 0.46066423103586907,
+      "true_q_cv_diagnostic": 0.43636195450040155,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          0,
+          6,
+          9,
+          18,
+          47,
+          50,
+          51,
+          52,
+          53,
+          61,
+          66,
+          78,
+          84,
+          85,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          0,
+          6,
+          9,
+          18,
+          39,
+          47,
+          50,
+          52,
+          53,
+          61,
+          66,
+          84,
+          85,
+          97
+        ],
+        "item_utility": [
+          0,
+          6,
+          9,
+          18,
+          47,
+          50,
+          51,
+          52,
+          53,
+          61,
+          66,
+          78,
+          84,
+          85,
+          97
+        ],
+        "item_no_survival": [
+          0,
+          6,
+          9,
+          13,
+          18,
+          19,
+          47,
+          50,
+          51,
+          52,
+          66,
+          78,
+          84,
+          85,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4452719275202705,
+        "std": 0.21741222677488845,
+        "cv": 0.4882684340458247
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.1875,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": false,
+          "jaccard_distance": 0.0,
+          "realized_freshness_delta": 0.0
+        }
+      },
+      "window": 4,
+      "true_q_mean_diagnostic": 0.4502258675919657,
+      "true_q_cv_diagnostic": 0.4816831491523876,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          4,
+          8,
+          9,
+          18,
+          22,
+          35,
+          58,
+          60,
+          63,
+          66,
+          85,
+          95
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          4,
+          8,
+          9,
+          18,
+          22,
+          27,
+          35,
+          39,
+          60,
+          66,
+          85,
+          95
+        ],
+        "item_utility": [
+          1,
+          4,
+          8,
+          9,
+          18,
+          19,
+          22,
+          35,
+          60,
+          66,
+          85,
+          86,
+          95
+        ],
+        "item_no_survival": [
+          1,
+          4,
+          8,
+          9,
+          13,
+          18,
+          19,
+          22,
+          35,
+          60,
+          66,
+          85,
+          86
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4302724334735536,
+        "std": 0.22320669007163033,
+        "cv": 0.5187566590536634
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.2666666666666667,
+          "realized_freshness_delta": 0.02
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.2666666666666667,
+          "realized_freshness_delta": 0.03
+        }
+      },
+      "window": 5,
+      "true_q_mean_diagnostic": 0.4342336912483041,
+      "true_q_cv_diagnostic": 0.5177638857910273,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          0,
+          2,
+          4,
+          6,
+          7,
+          9,
+          11,
+          19,
+          22,
+          60,
+          61,
+          67,
+          85,
+          98
+        ],
+        "bundle_no_survival_partial": [
+          0,
+          2,
+          4,
+          6,
+          7,
+          9,
+          11,
+          22,
+          43,
+          61,
+          67,
+          85,
+          98
+        ],
+        "item_utility": [
+          0,
+          2,
+          4,
+          6,
+          7,
+          9,
+          11,
+          19,
+          22,
+          78,
+          85,
+          86,
+          97,
+          98
+        ],
+        "item_no_survival": [
+          0,
+          2,
+          4,
+          6,
+          7,
+          9,
+          11,
+          13,
+          19,
+          22,
+          78,
+          85,
+          97,
+          98
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.43440606732078596,
+        "std": 0.22634346059771632,
+        "cv": 0.5210412045892849
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.19999999999999996,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.3529411764705882,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 6,
+      "true_q_mean_diagnostic": 0.43852730104260856,
+      "true_q_cv_diagnostic": 0.5160411555174711,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          4,
+          7,
+          9,
+          11,
+          16,
+          20,
+          22,
+          34,
+          48,
+          66,
+          84,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          4,
+          7,
+          9,
+          11,
+          13,
+          16,
+          20,
+          22,
+          34,
+          66,
+          69,
+          84,
+          93
+        ],
+        "item_utility": [
+          4,
+          7,
+          9,
+          11,
+          15,
+          20,
+          22,
+          24,
+          34,
+          50,
+          78,
+          86,
+          97
+        ],
+        "item_no_survival": [
+          4,
+          7,
+          9,
+          11,
+          13,
+          15,
+          22,
+          24,
+          34,
+          50,
+          66,
+          69,
+          78,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.42513667477639394,
+        "std": 0.22448931488458984,
+        "cv": 0.5280403413858916
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.33333333333333337,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.5294117647058824,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 7,
+      "true_q_mean_diagnostic": 0.4293607289240462,
+      "true_q_cv_diagnostic": 0.5181034700252215,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          0,
+          6,
+          9,
+          15,
+          21,
+          27,
+          34,
+          35,
+          50,
+          66,
+          67,
+          71,
+          93
+        ],
+        "bundle_no_survival_partial": [
+          0,
+          6,
+          9,
+          13,
+          15,
+          34,
+          35,
+          50,
+          66,
+          67,
+          69,
+          76,
+          97
+        ],
+        "item_utility": [
+          0,
+          6,
+          9,
+          15,
+          21,
+          24,
+          34,
+          35,
+          50,
+          66,
+          67,
+          69,
+          86,
+          87
+        ],
+        "item_no_survival": [
+          0,
+          6,
+          9,
+          13,
+          15,
+          24,
+          34,
+          35,
+          50,
+          67,
+          69,
+          78,
+          88,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.39890504310195357,
+        "std": 0.21776639614124027,
+        "cv": 0.5459103611422199
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.47058823529411764,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4117647058823529,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 8,
+      "true_q_mean_diagnostic": 0.40245429816475564,
+      "true_q_cv_diagnostic": 0.541004050906885,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          4,
+          6,
+          7,
+          9,
+          10,
+          17,
+          19,
+          44,
+          46,
+          80,
+          85
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          4,
+          6,
+          7,
+          9,
+          10,
+          13,
+          15,
+          16,
+          44,
+          46,
+          60,
+          69,
+          85,
+          97
+        ],
+        "item_utility": [
+          1,
+          4,
+          6,
+          7,
+          9,
+          10,
+          15,
+          17,
+          19,
+          24,
+          44,
+          46,
+          78
+        ],
+        "item_no_survival": [
+          1,
+          4,
+          6,
+          7,
+          9,
+          10,
+          13,
+          15,
+          17,
+          44,
+          46,
+          78,
+          85,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.43952373147713386,
+        "std": 0.23166275599230476,
+        "cv": 0.5270767865337823
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.5,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.33333333333333337,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 9,
+      "true_q_mean_diagnostic": 0.44307411547180053,
+      "true_q_cv_diagnostic": 0.5229108083390398,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          9,
+          12,
+          15,
+          16,
+          47,
+          50,
+          60,
+          86,
+          87,
+          97,
+          98
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          9,
+          13,
+          15,
+          16,
+          32,
+          43,
+          47,
+          50,
+          60,
+          88,
+          98
+        ],
+        "item_utility": [
+          1,
+          9,
+          10,
+          12,
+          15,
+          16,
+          19,
+          47,
+          50,
+          87,
+          98
+        ],
+        "item_no_survival": [
+          1,
+          9,
+          10,
+          13,
+          15,
+          16,
+          19,
+          24,
+          47,
+          50,
+          69,
+          78,
+          97,
+          98
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4075829882946306,
+        "std": 0.22322382525870307,
+        "cv": 0.5476769925866991
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.5,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.3571428571428571,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 10,
+      "true_q_mean_diagnostic": 0.4105399634041499,
+      "true_q_cv_diagnostic": 0.5386662761912713,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          4,
+          5,
+          9,
+          10,
+          15,
+          16,
+          22,
+          30,
+          79,
+          99
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          4,
+          5,
+          9,
+          15,
+          16,
+          18,
+          22,
+          39,
+          47,
+          79
+        ],
+        "item_utility": [
+          1,
+          4,
+          5,
+          9,
+          10,
+          15,
+          16,
+          18,
+          19,
+          22,
+          24,
+          47
+        ],
+        "item_no_survival": [
+          1,
+          4,
+          5,
+          9,
+          10,
+          13,
+          15,
+          18,
+          19,
+          22,
+          24,
+          47,
+          78
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4348675405722685,
+        "std": 0.23201972664432421,
+        "cv": 0.533541147584838
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.4285714285714286,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4666666666666667,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 11,
+      "true_q_mean_diagnostic": 0.437832087962255,
+      "true_q_cv_diagnostic": 0.5279690756534604,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          2,
+          4,
+          7,
+          9,
+          10,
+          18,
+          19,
+          24,
+          39,
+          47,
+          53,
+          79,
+          85
+        ],
+        "bundle_no_survival_partial": [
+          2,
+          4,
+          7,
+          9,
+          10,
+          13,
+          18,
+          32,
+          39,
+          47,
+          79,
+          85,
+          88,
+          93
+        ],
+        "item_utility": [
+          2,
+          3,
+          4,
+          7,
+          9,
+          10,
+          12,
+          18,
+          19,
+          24,
+          47,
+          79,
+          85
+        ],
+        "item_no_survival": [
+          2,
+          3,
+          4,
+          7,
+          9,
+          10,
+          13,
+          18,
+          24,
+          47,
+          69,
+          78,
+          79,
+          85,
+          86,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.41779445987062536,
+        "std": 0.23707804949046699,
+        "cv": 0.5674513959899823
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.4117647058823529,
+          "realized_freshness_delta": 0.03
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.2666666666666667,
+          "realized_freshness_delta": 0.03
+        }
+      },
+      "window": 12,
+      "true_q_mean_diagnostic": 0.4193716860409313,
+      "true_q_cv_diagnostic": 0.5650658446182802,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          4,
+          11,
+          16,
+          18,
+          22,
+          23,
+          41,
+          44,
+          52,
+          67,
+          88,
+          90
+        ],
+        "bundle_no_survival_partial": [
+          4,
+          9,
+          16,
+          18,
+          20,
+          22,
+          23,
+          41,
+          48,
+          52,
+          79,
+          90,
+          97
+        ],
+        "item_utility": [
+          3,
+          4,
+          9,
+          11,
+          18,
+          20,
+          22,
+          23,
+          41,
+          44,
+          52,
+          78,
+          90
+        ],
+        "item_no_survival": [
+          4,
+          9,
+          11,
+          13,
+          18,
+          20,
+          22,
+          23,
+          41,
+          52,
+          69,
+          78,
+          90,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4158581634637427,
+        "std": 0.21916037546021067,
+        "cv": 0.5270075105290521
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.5294117647058824,
+          "realized_freshness_delta": 0.02
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4375,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 13,
+      "true_q_mean_diagnostic": 0.4175972277091212,
+      "true_q_cv_diagnostic": 0.5202568115387163,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          2,
+          4,
+          10,
+          16,
+          20,
+          41,
+          44,
+          46,
+          47,
+          53,
+          60,
+          67,
+          79,
+          85,
+          87
+        ],
+        "bundle_no_survival_partial": [
+          2,
+          4,
+          10,
+          13,
+          16,
+          20,
+          44,
+          46,
+          47,
+          49,
+          53,
+          60,
+          67,
+          69,
+          79,
+          85
+        ],
+        "item_utility": [
+          2,
+          4,
+          9,
+          10,
+          12,
+          15,
+          41,
+          44,
+          46,
+          47,
+          53,
+          79,
+          85,
+          97
+        ],
+        "item_no_survival": [
+          2,
+          3,
+          4,
+          9,
+          10,
+          13,
+          15,
+          20,
+          41,
+          44,
+          46,
+          47,
+          78,
+          79,
+          85,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4334482234878054,
+        "std": 0.22483647173951293,
+        "cv": 0.5187158685997901
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.2777777777777778,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4736842105263158,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 14,
+      "true_q_mean_diagnostic": 0.43560969066244737,
+      "true_q_cv_diagnostic": 0.5144068242863187,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          4,
+          10,
+          16,
+          20,
+          22,
+          24,
+          26,
+          46,
+          50,
+          53,
+          60,
+          66,
+          71,
+          98
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          4,
+          9,
+          10,
+          15,
+          20,
+          22,
+          26,
+          46,
+          50,
+          53,
+          66,
+          97,
+          98
+        ],
+        "item_utility": [
+          1,
+          4,
+          9,
+          10,
+          15,
+          18,
+          20,
+          22,
+          26,
+          50,
+          53,
+          66,
+          98
+        ],
+        "item_no_survival": [
+          1,
+          4,
+          9,
+          10,
+          13,
+          15,
+          18,
+          20,
+          22,
+          23,
+          46,
+          49,
+          50,
+          66,
+          78,
+          98
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.41268409247657656,
+        "std": 0.21774470188849482,
+        "cv": 0.5276304705174788
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.38888888888888884,
+          "realized_freshness_delta": -0.02
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4444444444444444,
+          "realized_freshness_delta": -0.02
+        }
+      },
+      "window": 15,
+      "true_q_mean_diagnostic": 0.416125810204929,
+      "true_q_cv_diagnostic": 0.5205013662694719,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          4,
+          8,
+          9,
+          10,
+          11,
+          18,
+          22,
+          23,
+          34,
+          49,
+          50,
+          60,
+          61,
+          79
+        ],
+        "bundle_no_survival_partial": [
+          4,
+          8,
+          9,
+          10,
+          11,
+          15,
+          18,
+          22,
+          23,
+          50,
+          60,
+          61,
+          79
+        ],
+        "item_utility": [
+          4,
+          8,
+          9,
+          10,
+          11,
+          15,
+          18,
+          22,
+          23,
+          34,
+          50,
+          60,
+          79
+        ],
+        "item_no_survival": [
+          4,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          18,
+          22,
+          23,
+          49,
+          50,
+          60,
+          69
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4354982193638624,
+        "std": 0.21949111221256068,
+        "cv": 0.5040000221658174
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.19999999999999996,
+          "realized_freshness_delta": -0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.19999999999999996,
+          "realized_freshness_delta": 0.0
+        }
+      },
+      "window": 16,
+      "true_q_mean_diagnostic": 0.4375816440256953,
+      "true_q_cv_diagnostic": 0.5043664211652575,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          11,
+          15,
+          26,
+          30,
+          39,
+          48,
+          53,
+          63,
+          86,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          11,
+          13,
+          15,
+          26,
+          29,
+          32,
+          39,
+          71,
+          88,
+          93
+        ],
+        "item_utility": [
+          3,
+          11,
+          15,
+          19,
+          27,
+          48,
+          53,
+          63,
+          69,
+          93
+        ],
+        "item_no_survival": [
+          3,
+          11,
+          12,
+          13,
+          15,
+          19,
+          69,
+          78,
+          93,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.44877536483542096,
+        "std": 0.2319009014844366,
+        "cv": 0.5167416031614869
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.75,
+          "realized_freshness_delta": 0.03
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.6666666666666667,
+          "realized_freshness_delta": 0.04
+        }
+      },
+      "window": 17,
+      "true_q_mean_diagnostic": 0.44950538690086017,
+      "true_q_cv_diagnostic": 0.5125754121797229,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          4,
+          8,
+          22,
+          30,
+          37,
+          48,
+          50,
+          66,
+          71,
+          78,
+          86,
+          87,
+          98
+        ],
+        "bundle_no_survival_partial": [
+          4,
+          8,
+          9,
+          13,
+          19,
+          22,
+          48,
+          50,
+          66,
+          69,
+          76,
+          98
+        ],
+        "item_utility": [
+          3,
+          4,
+          8,
+          9,
+          19,
+          22,
+          34,
+          48,
+          50,
+          66,
+          69,
+          78,
+          98
+        ],
+        "item_no_survival": [
+          3,
+          4,
+          8,
+          9,
+          13,
+          19,
+          22,
+          34,
+          50,
+          66,
+          69,
+          78,
+          98
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4221391424313378,
+        "std": 0.2232337145339743,
+        "cv": 0.5288154830851393
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.6111111111111112,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.5555555555555556,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 18,
+      "true_q_mean_diagnostic": 0.42243806197462846,
+      "true_q_cv_diagnostic": 0.5261584831096092,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9,
+          15,
+          22,
+          30,
+          52,
+          61,
+          67,
+          85,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9,
+          15,
+          22,
+          52,
+          61,
+          67,
+          78,
+          85,
+          97
+        ],
+        "item_utility": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9,
+          12,
+          15,
+          22,
+          34,
+          51,
+          52,
+          85
+        ],
+        "item_no_survival": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9,
+          13,
+          15,
+          22,
+          34,
+          51,
+          52,
+          69,
+          85,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4381306259579516,
+        "std": 0.23467738847067401,
+        "cv": 0.535633380929633
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.1333333333333333,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4117647058823529,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 19,
+      "true_q_mean_diagnostic": 0.4391310238799006,
+      "true_q_cv_diagnostic": 0.5322187253243575,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          2,
+          7,
+          8,
+          9,
+          10,
+          11,
+          15,
+          30,
+          51,
+          66,
+          67,
+          84,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          2,
+          7,
+          8,
+          9,
+          10,
+          11,
+          15,
+          39,
+          66,
+          67,
+          84,
+          97
+        ],
+        "item_utility": [
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11,
+          15,
+          34,
+          66,
+          78,
+          84,
+          97
+        ],
+        "item_no_survival": [
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          34,
+          69,
+          78,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4298475818611396,
+        "std": 0.21838185616023426,
+        "cv": 0.5080448637507552
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.2142857142857143,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.375,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 20,
+      "true_q_mean_diagnostic": 0.4307586724497919,
+      "true_q_cv_diagnostic": 0.5037071724787824,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          4,
+          15,
+          18,
+          19,
+          21,
+          39,
+          46,
+          60,
+          61,
+          67,
+          85,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          4,
+          9,
+          15,
+          18,
+          39,
+          46,
+          60,
+          61,
+          67,
+          69,
+          85,
+          87,
+          97
+        ],
+        "item_utility": [
+          3,
+          4,
+          9,
+          11,
+          15,
+          18,
+          19,
+          34,
+          46,
+          60,
+          61,
+          85
+        ],
+        "item_no_survival": [
+          4,
+          9,
+          11,
+          13,
+          15,
+          18,
+          19,
+          34,
+          46,
+          60,
+          69,
+          85,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.440866091860908,
+        "std": 0.23924685947177607,
+        "cv": 0.542674666726825
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.33333333333333337,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.5,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 21,
+      "true_q_mean_diagnostic": 0.4418856012423605,
+      "true_q_cv_diagnostic": 0.5382311749695013,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          2,
+          4,
+          9,
+          10,
+          39,
+          41,
+          46,
+          47,
+          49,
+          50,
+          61,
+          66,
+          71,
+          79,
+          87,
+          95
+        ],
+        "bundle_no_survival_partial": [
+          2,
+          4,
+          9,
+          10,
+          39,
+          41,
+          46,
+          47,
+          49,
+          50,
+          61,
+          66,
+          79,
+          87,
+          95,
+          97
+        ],
+        "item_utility": [
+          2,
+          4,
+          9,
+          10,
+          11,
+          19,
+          34,
+          41,
+          46,
+          47,
+          50,
+          61,
+          66,
+          79,
+          95
+        ],
+        "item_no_survival": [
+          2,
+          4,
+          9,
+          10,
+          11,
+          13,
+          34,
+          41,
+          46,
+          47,
+          50,
+          66,
+          78,
+          79,
+          95,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.41633913601641304,
+        "std": 0.2021969975817108,
+        "cv": 0.4856545544009097
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.11764705882352944,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.368421052631579,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 22,
+      "true_q_mean_diagnostic": 0.416788215249432,
+      "true_q_cv_diagnostic": 0.4780773281535488,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          0,
+          1,
+          4,
+          6,
+          10,
+          18,
+          19,
+          20,
+          22,
+          23,
+          48,
+          60,
+          61,
+          66,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          0,
+          1,
+          4,
+          6,
+          15,
+          18,
+          20,
+          22,
+          23,
+          39,
+          60,
+          61,
+          66,
+          87
+        ],
+        "item_utility": [
+          0,
+          1,
+          4,
+          6,
+          10,
+          11,
+          15,
+          18,
+          19,
+          20,
+          22,
+          34,
+          60
+        ],
+        "item_no_survival": [
+          0,
+          1,
+          3,
+          4,
+          6,
+          10,
+          11,
+          13,
+          15,
+          18,
+          22,
+          23,
+          34,
+          60
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.43285621267194824,
+        "std": 0.22686054637482592,
+        "cv": 0.5241013984169341
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.38888888888888884,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4444444444444444,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 23,
+      "true_q_mean_diagnostic": 0.4334230807492914,
+      "true_q_cv_diagnostic": 0.519725078419833,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          0,
+          1,
+          4,
+          8,
+          9,
+          15,
+          19,
+          20,
+          22,
+          23,
+          24,
+          47,
+          85,
+          87
+        ],
+        "bundle_no_survival_partial": [
+          0,
+          1,
+          4,
+          8,
+          9,
+          15,
+          20,
+          22,
+          23,
+          27,
+          47,
+          85,
+          87,
+          97
+        ],
+        "item_utility": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          9,
+          15,
+          19,
+          22,
+          23,
+          24,
+          34,
+          47,
+          85
+        ],
+        "item_no_survival": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          9,
+          13,
+          15,
+          19,
+          22,
+          23,
+          47,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4390672101227255,
+        "std": 0.23875675400031734,
+        "cv": 0.5437817912514612
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.25,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.25,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 24,
+      "true_q_mean_diagnostic": 0.44018156507023426,
+      "true_q_cv_diagnostic": 0.5398887452289955,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          8,
+          18,
+          21,
+          41,
+          47,
+          50,
+          52,
+          60,
+          61,
+          62,
+          63,
+          66,
+          71,
+          79,
+          98
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          8,
+          15,
+          18,
+          39,
+          47,
+          50,
+          52,
+          60,
+          61,
+          63,
+          66,
+          79,
+          97
+        ],
+        "item_utility": [
+          1,
+          8,
+          9,
+          15,
+          18,
+          34,
+          41,
+          47,
+          50,
+          52,
+          60,
+          62,
+          66,
+          69,
+          79,
+          98
+        ],
+        "item_no_survival": [
+          1,
+          8,
+          9,
+          13,
+          15,
+          18,
+          41,
+          47,
+          50,
+          52,
+          60,
+          62,
+          66,
+          69,
+          79,
+          98
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.3983485990041322,
+        "std": 0.2222951840249399,
+        "cv": 0.5580418371764725
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.42105263157894735,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.4,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 25,
+      "true_q_mean_diagnostic": 0.3997637004876759,
+      "true_q_cv_diagnostic": 0.5527543907448502,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          4,
+          10,
+          19,
+          22,
+          44,
+          46,
+          47,
+          50,
+          60,
+          61,
+          66,
+          67,
+          87,
+          97
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          4,
+          9,
+          10,
+          15,
+          22,
+          24,
+          46,
+          47,
+          50,
+          60,
+          61,
+          66,
+          87,
+          95,
+          97
+        ],
+        "item_utility": [
+          1,
+          4,
+          9,
+          10,
+          11,
+          15,
+          22,
+          34,
+          46,
+          47,
+          50,
+          60,
+          61,
+          66,
+          95
+        ],
+        "item_no_survival": [
+          1,
+          4,
+          9,
+          10,
+          13,
+          15,
+          19,
+          22,
+          46,
+          47,
+          50,
+          60,
+          66,
+          95,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.42407085256767585,
+        "std": 0.23935760521918722,
+        "cv": 0.5644283349584586
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.368421052631579,
+          "realized_freshness_delta": 0.01
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.5,
+          "realized_freshness_delta": 0.01
+        }
+      },
+      "window": 26,
+      "true_q_mean_diagnostic": 0.424648377459486,
+      "true_q_cv_diagnostic": 0.5599524478190865,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          0,
+          9,
+          15,
+          17,
+          18,
+          19,
+          22,
+          41,
+          50,
+          66,
+          95,
+          97,
+          98
+        ],
+        "bundle_no_survival_partial": [
+          0,
+          9,
+          15,
+          17,
+          18,
+          19,
+          22,
+          41,
+          50,
+          66,
+          95,
+          97,
+          98
+        ],
+        "item_utility": [
+          0,
+          3,
+          9,
+          15,
+          17,
+          18,
+          22,
+          24,
+          34,
+          41,
+          66,
+          95,
+          97,
+          98
+        ],
+        "item_no_survival": [
+          0,
+          9,
+          13,
+          15,
+          17,
+          18,
+          19,
+          22,
+          24,
+          35,
+          41,
+          97,
+          98
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.4207145142341478,
+        "std": 0.20769971558423436,
+        "cv": 0.4936832663411263
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": false,
+          "jaccard_distance": 0.0,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.3125,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 27,
+      "true_q_mean_diagnostic": 0.42037691055822607,
+      "true_q_cv_diagnostic": 0.4918211007171783,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          0,
+          1,
+          2,
+          4,
+          9,
+          16,
+          19,
+          24,
+          37,
+          63,
+          78,
+          84,
+          85
+        ],
+        "bundle_no_survival_partial": [
+          0,
+          1,
+          2,
+          4,
+          9,
+          16,
+          19,
+          24,
+          35,
+          39,
+          84,
+          85,
+          97
+        ],
+        "item_utility": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          9,
+          11,
+          19,
+          34,
+          35,
+          78,
+          84,
+          85
+        ],
+        "item_no_survival": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          9,
+          13,
+          19,
+          34,
+          35,
+          78,
+          84,
+          85,
+          97
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.462986714258206,
+        "std": 0.21510054487181562,
+        "cv": 0.46459334198487356
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.375,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.47058823529411764,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 28,
+      "true_q_mean_diagnostic": 0.4631264368288063,
+      "true_q_cv_diagnostic": 0.45892905271879375,
+      "unaffordable_missing_bundles": 0
+    },
+    {
+      "actions": {
+        "sabs_partial": [
+          1,
+          4,
+          10,
+          16,
+          17,
+          18,
+          22,
+          53,
+          67,
+          79,
+          95
+        ],
+        "bundle_no_survival_partial": [
+          1,
+          4,
+          10,
+          16,
+          17,
+          18,
+          22,
+          24,
+          53,
+          79,
+          95,
+          97
+        ],
+        "item_utility": [
+          1,
+          4,
+          10,
+          15,
+          16,
+          17,
+          18,
+          22,
+          24,
+          35,
+          67,
+          95
+        ],
+        "item_no_survival": [
+          1,
+          4,
+          10,
+          13,
+          15,
+          16,
+          17,
+          18,
+          22,
+          35,
+          78,
+          95
+        ]
+      },
+      "estimated_q": {
+        "mean": 0.42228983452395025,
+        "std": 0.23353474046794773,
+        "cv": 0.5530200383137633
+      },
+      "comparisons_to_sabs": {
+        "bundle_no_survival_partial": {
+          "action_differs": true,
+          "jaccard_distance": 0.23076923076923073,
+          "realized_freshness_delta": 0.0
+        },
+        "item_utility": {
+          "action_differs": true,
+          "jaccard_distance": 0.3571428571428571,
+          "realized_freshness_delta": 0.02
+        }
+      },
+      "window": 29,
+      "true_q_mean_diagnostic": 0.42226187010724936,
+      "true_q_cv_diagnostic": 0.5544009262144024,
+      "unaffordable_missing_bundles": 0
+    }
+  ],
+  "case": "common_shock_eta0.5",
+  "trace_sha256": "f9d9cc0e61fa0a534f6f59a249d4e27cde7c53158b4fe1400700c4c50ecd902a",
+  "mean_rate": 0.5,
+  "population_cv": 1.0,
+  "delay_mode": "uniform",
+  "eta": 0.5
+}

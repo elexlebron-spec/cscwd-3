@@ -1,0 +1,1221 @@
+{
+  "summary": {
+    "method": "milp_no_survival_dynamic",
+    "seed": 104,
+    "structure": "montage",
+    "budget_fraction": 0.1,
+    "fresh_fraction": 0.36149425287356324,
+    "sync_cost": 922,
+    "decision_seconds": [
+      7.292000020697742e-06,
+      0.007693915999993806,
+      0.003244124999980613,
+      0.018140834000007544,
+      0.008568000000025222,
+      0.0021735830000011447,
+      0.003224250000016582,
+      0.01959020800001099,
+      0.02449120800002902,
+      0.009512333000031958,
+      0.0030980000000226937,
+      0.0028299999999603642,
+      0.0030152500000326654,
+      0.0027638330000172573,
+      0.005372165999972367,
+      0.0037394999999946776,
+      0.003030542000033165,
+      0.003389167000023008,
+      0.003695332999996026,
+      0.0025519999999801257,
+      0.006290041999989171,
+      0.002339584000026207,
+      0.003489624999986063,
+      0.002711957999963488,
+      0.0028173749999496067,
+      0.003043208000008235,
+      0.017079416999990826,
+      0.04401854099995717,
+      0.012193625000008979,
+      0.004420374999995147
+    ],
+    "solver_optimal_windows": 30,
+    "solver_missing_incumbent_windows": 0
+  },
+  "windows": [
+    {
+      "window": 0,
+      "fresh_fraction": 0.39655172413793105,
+      "selected_files": [],
+      "sync_cost": 0,
+      "solver": {
+        "action": [],
+        "value": 0.0,
+        "upper_bound": 0.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "empty decision objective",
+        "seconds": 7.292000020697742e-06
+      },
+      "nonempty_stale_set": false,
+      "heuristic_seconds_same_snapshot": 0.00016979200000832861,
+      "heuristic_value_same_snapshot": 0.0
+    },
+    {
+      "window": 1,
+      "fresh_fraction": 0.4827586206896552,
+      "selected_files": [
+        15,
+        41,
+        84,
+        89,
+        91,
+        97,
+        100,
+        102
+      ],
+      "sync_cost": 32,
+      "solver": {
+        "action": [
+          15,
+          41,
+          84,
+          89,
+          91,
+          97,
+          100,
+          102
+        ],
+        "value": 31.0,
+        "upper_bound": 31.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.007693915999993806
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0023721249999653082,
+      "heuristic_value_same_snapshot": 30.0
+    },
+    {
+      "window": 2,
+      "fresh_fraction": 0.46551724137931033,
+      "selected_files": [
+        9,
+        23,
+        30,
+        33,
+        34,
+        36,
+        38,
+        41,
+        49,
+        51,
+        89,
+        100,
+        101
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          9,
+          23,
+          30,
+          33,
+          34,
+          36,
+          38,
+          41,
+          49,
+          51,
+          89,
+          100,
+          101
+        ],
+        "value": 17.0,
+        "upper_bound": 17.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.003244124999980613
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.00277725000000828,
+      "heuristic_value_same_snapshot": 17.0
+    },
+    {
+      "window": 3,
+      "fresh_fraction": 0.5,
+      "selected_files": [
+        24,
+        51,
+        82,
+        83,
+        88,
+        89,
+        94,
+        100,
+        101
+      ],
+      "sync_cost": 32,
+      "solver": {
+        "action": [
+          24,
+          51,
+          82,
+          83,
+          88,
+          89,
+          94,
+          100,
+          101
+        ],
+        "value": 16.0,
+        "upper_bound": 16.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.018140834000007544
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002269249999983458,
+      "heuristic_value_same_snapshot": 14.0
+    },
+    {
+      "window": 4,
+      "fresh_fraction": 0.2413793103448276,
+      "selected_files": [
+        8,
+        9,
+        28,
+        31,
+        33,
+        36,
+        41,
+        48,
+        80,
+        100
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          8,
+          9,
+          28,
+          31,
+          33,
+          36,
+          41,
+          48,
+          80,
+          100
+        ],
+        "value": 17.0,
+        "upper_bound": 16.999999999999993,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.008568000000025222
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0019984169999816004,
+      "heuristic_value_same_snapshot": 17.0
+    },
+    {
+      "window": 5,
+      "fresh_fraction": 0.41379310344827586,
+      "selected_files": [
+        1,
+        9,
+        11,
+        24,
+        30,
+        81,
+        82,
+        89,
+        100,
+        102
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          1,
+          9,
+          11,
+          24,
+          30,
+          81,
+          82,
+          89,
+          100,
+          102
+        ],
+        "value": 30.0,
+        "upper_bound": 30.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0021735830000011447
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0026868749999948704,
+      "heuristic_value_same_snapshot": 30.0
+    },
+    {
+      "window": 6,
+      "fresh_fraction": 0.4827586206896552,
+      "selected_files": [
+        11,
+        36,
+        49,
+        82,
+        87,
+        88,
+        98,
+        100,
+        101
+      ],
+      "sync_cost": 32,
+      "solver": {
+        "action": [
+          11,
+          36,
+          49,
+          82,
+          87,
+          88,
+          98,
+          100,
+          101
+        ],
+        "value": 19.0,
+        "upper_bound": 19.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.003224250000016582
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.00249795899998162,
+      "heuristic_value_same_snapshot": 19.0
+    },
+    {
+      "window": 7,
+      "fresh_fraction": 0.13793103448275862,
+      "selected_files": [
+        9,
+        28,
+        30,
+        31,
+        33,
+        48,
+        89,
+        94,
+        95,
+        100
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          9,
+          28,
+          30,
+          31,
+          33,
+          48,
+          89,
+          94,
+          95,
+          100
+        ],
+        "value": 17.0,
+        "upper_bound": 17.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.01959020800001099
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002259874999992917,
+      "heuristic_value_same_snapshot": 17.0
+    },
+    {
+      "window": 8,
+      "fresh_fraction": 0.2413793103448276,
+      "selected_files": [
+        1,
+        35,
+        41,
+        86,
+        88,
+        89,
+        97,
+        99,
+        102
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          1,
+          35,
+          41,
+          86,
+          88,
+          89,
+          97,
+          99,
+          102
+        ],
+        "value": 26.0,
+        "upper_bound": 26.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.02449120800002902
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0026302089999603595,
+      "heuristic_value_same_snapshot": 26.0
+    },
+    {
+      "window": 9,
+      "fresh_fraction": 0.3620689655172414,
+      "selected_files": [
+        24,
+        80,
+        89,
+        95,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          24,
+          80,
+          89,
+          95,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "value": 20.0,
+        "upper_bound": 20.000000000000004,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.009512333000031958
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0024106669999923724,
+      "heuristic_value_same_snapshot": 19.0
+    },
+    {
+      "window": 10,
+      "fresh_fraction": 0.3103448275862069,
+      "selected_files": [
+        1,
+        10,
+        11,
+        30,
+        33,
+        36,
+        81,
+        82,
+        89,
+        102
+      ],
+      "sync_cost": 32,
+      "solver": {
+        "action": [
+          1,
+          10,
+          11,
+          30,
+          33,
+          36,
+          81,
+          82,
+          89,
+          102
+        ],
+        "value": 29.0,
+        "upper_bound": 29.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0030980000000226937
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002617999999984022,
+      "heuristic_value_same_snapshot": 29.0
+    },
+    {
+      "window": 11,
+      "fresh_fraction": 0.41379310344827586,
+      "selected_files": [
+        23,
+        24,
+        30,
+        33,
+        82,
+        89,
+        95,
+        99,
+        100,
+        101
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          23,
+          24,
+          30,
+          33,
+          82,
+          89,
+          95,
+          99,
+          100,
+          101
+        ],
+        "value": 19.0,
+        "upper_bound": 19.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0028299999999603642
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0029289999999946303,
+      "heuristic_value_same_snapshot": 19.0
+    },
+    {
+      "window": 12,
+      "fresh_fraction": 0.29310344827586204,
+      "selected_files": [
+        31,
+        35,
+        51,
+        89,
+        95,
+        97,
+        98,
+        100
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          31,
+          35,
+          51,
+          89,
+          95,
+          97,
+          98,
+          100
+        ],
+        "value": 19.0,
+        "upper_bound": 19.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0030152500000326654
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002088249999985692,
+      "heuristic_value_same_snapshot": 19.0
+    },
+    {
+      "window": 13,
+      "fresh_fraction": 0.1896551724137931,
+      "selected_files": [
+        23,
+        33,
+        36,
+        41,
+        51,
+        80,
+        95,
+        97,
+        99,
+        100
+      ],
+      "sync_cost": 32,
+      "solver": {
+        "action": [
+          23,
+          33,
+          36,
+          41,
+          51,
+          80,
+          95,
+          97,
+          99,
+          100
+        ],
+        "value": 21.0,
+        "upper_bound": 21.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0027638330000172573
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0022053330000062488,
+      "heuristic_value_same_snapshot": 21.0
+    },
+    {
+      "window": 14,
+      "fresh_fraction": 0.3793103448275862,
+      "selected_files": [
+        29,
+        30,
+        33,
+        39,
+        80,
+        89,
+        95,
+        98,
+        99,
+        102
+      ],
+      "sync_cost": 30,
+      "solver": {
+        "action": [
+          29,
+          30,
+          33,
+          39,
+          80,
+          89,
+          95,
+          98,
+          99,
+          102
+        ],
+        "value": 26.0,
+        "upper_bound": 26.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.005372165999972367
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0030860419999498845,
+      "heuristic_value_same_snapshot": 26.0
+    },
+    {
+      "window": 15,
+      "fresh_fraction": 0.20689655172413793,
+      "selected_files": [
+        9,
+        11,
+        31,
+        33,
+        36,
+        87,
+        89,
+        94,
+        97,
+        100
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          9,
+          11,
+          31,
+          33,
+          36,
+          87,
+          89,
+          94,
+          97,
+          100
+        ],
+        "value": 20.0,
+        "upper_bound": 20.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0037394999999946776
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0019110829999817724,
+      "heuristic_value_same_snapshot": 20.0
+    },
+    {
+      "window": 16,
+      "fresh_fraction": 0.3103448275862069,
+      "selected_files": [
+        11,
+        33,
+        34,
+        38,
+        80,
+        87,
+        97,
+        98,
+        100,
+        102
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          11,
+          33,
+          34,
+          38,
+          80,
+          87,
+          97,
+          98,
+          100,
+          102
+        ],
+        "value": 26.0,
+        "upper_bound": 26.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.003030542000033165
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002912374999993972,
+      "heuristic_value_same_snapshot": 26.0
+    },
+    {
+      "window": 17,
+      "fresh_fraction": 0.3448275862068966,
+      "selected_files": [
+        10,
+        24,
+        33,
+        34,
+        51,
+        83,
+        89,
+        95,
+        96,
+        100
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          10,
+          24,
+          33,
+          34,
+          51,
+          83,
+          89,
+          95,
+          96,
+          100
+        ],
+        "value": 22.0,
+        "upper_bound": 22.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.003389167000023008
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.003021792000026835,
+      "heuristic_value_same_snapshot": 22.0
+    },
+    {
+      "window": 18,
+      "fresh_fraction": 0.46551724137931033,
+      "selected_files": [
+        11,
+        22,
+        36,
+        41,
+        50,
+        83,
+        86,
+        89,
+        100,
+        102
+      ],
+      "sync_cost": 32,
+      "solver": {
+        "action": [
+          11,
+          22,
+          36,
+          41,
+          50,
+          83,
+          86,
+          89,
+          100,
+          102
+        ],
+        "value": 31.0,
+        "upper_bound": 31.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.003695332999996026
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0031411669999670266,
+      "heuristic_value_same_snapshot": 31.0
+    },
+    {
+      "window": 19,
+      "fresh_fraction": 0.3620689655172414,
+      "selected_files": [
+        24,
+        30,
+        31,
+        33,
+        86,
+        89,
+        95,
+        98,
+        100,
+        101
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          24,
+          30,
+          31,
+          33,
+          86,
+          89,
+          95,
+          98,
+          100,
+          101
+        ],
+        "value": 21.0,
+        "upper_bound": 21.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0025519999999801257
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0023447919999739497,
+      "heuristic_value_same_snapshot": 21.0
+    },
+    {
+      "window": 20,
+      "fresh_fraction": 0.29310344827586204,
+      "selected_files": [
+        1,
+        8,
+        9,
+        10,
+        32,
+        33,
+        51,
+        89,
+        96,
+        100
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          1,
+          8,
+          9,
+          10,
+          32,
+          33,
+          51,
+          89,
+          96,
+          100
+        ],
+        "value": 21.0,
+        "upper_bound": 21.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.006290041999989171
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0020809170000006816,
+      "heuristic_value_same_snapshot": 21.0
+    },
+    {
+      "window": 21,
+      "fresh_fraction": 0.43103448275862066,
+      "selected_files": [
+        29,
+        33,
+        34,
+        35,
+        38,
+        41,
+        88,
+        89,
+        95,
+        98,
+        100,
+        101
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          29,
+          33,
+          34,
+          35,
+          38,
+          41,
+          88,
+          89,
+          95,
+          98,
+          100,
+          101
+        ],
+        "value": 19.0,
+        "upper_bound": 19.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.002339584000026207
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0025792079999860107,
+      "heuristic_value_same_snapshot": 19.0
+    },
+    {
+      "window": 22,
+      "fresh_fraction": 0.43103448275862066,
+      "selected_files": [
+        8,
+        9,
+        11,
+        24,
+        31,
+        33,
+        82,
+        89,
+        95,
+        100
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          8,
+          9,
+          11,
+          24,
+          31,
+          33,
+          82,
+          89,
+          95,
+          100
+        ],
+        "value": 21.0,
+        "upper_bound": 21.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.003489624999986063
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002099957999973867,
+      "heuristic_value_same_snapshot": 21.0
+    },
+    {
+      "window": 23,
+      "fresh_fraction": 0.3793103448275862,
+      "selected_files": [
+        11,
+        23,
+        24,
+        30,
+        33,
+        38,
+        50,
+        51,
+        87,
+        89,
+        102
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          11,
+          23,
+          24,
+          30,
+          33,
+          38,
+          50,
+          51,
+          87,
+          89,
+          102
+        ],
+        "value": 32.0,
+        "upper_bound": 32.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.002711957999963488
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.003529958000001443,
+      "heuristic_value_same_snapshot": 32.0
+    },
+    {
+      "window": 24,
+      "fresh_fraction": 0.3275862068965517,
+      "selected_files": [
+        9,
+        33,
+        36,
+        80,
+        82,
+        88,
+        97,
+        98,
+        100
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          9,
+          33,
+          36,
+          80,
+          82,
+          88,
+          97,
+          98,
+          100
+        ],
+        "value": 20.0,
+        "upper_bound": 20.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0028173749999496067
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002563334000001305,
+      "heuristic_value_same_snapshot": 20.0
+    },
+    {
+      "window": 25,
+      "fresh_fraction": 0.39655172413793105,
+      "selected_files": [
+        8,
+        24,
+        33,
+        35,
+        82,
+        83,
+        88,
+        89,
+        102
+      ],
+      "sync_cost": 30,
+      "solver": {
+        "action": [
+          8,
+          24,
+          33,
+          35,
+          82,
+          83,
+          88,
+          89,
+          102
+        ],
+        "value": 24.0,
+        "upper_bound": 24.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.003043208000008235
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0027964999999881,
+      "heuristic_value_same_snapshot": 24.0
+    },
+    {
+      "window": 26,
+      "fresh_fraction": 0.46551724137931033,
+      "selected_files": [
+        8,
+        23,
+        28,
+        30,
+        31,
+        39,
+        87,
+        94,
+        100
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          8,
+          23,
+          28,
+          30,
+          31,
+          39,
+          87,
+          94,
+          100
+        ],
+        "value": 17.0,
+        "upper_bound": 17.000000000000007,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.017079416999990826
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002602249999995365,
+      "heuristic_value_same_snapshot": 17.0
+    },
+    {
+      "window": 27,
+      "fresh_fraction": 0.4827586206896552,
+      "selected_files": [
+        9,
+        30,
+        31,
+        32,
+        37,
+        38,
+        88,
+        98,
+        100,
+        101
+      ],
+      "sync_cost": 31,
+      "solver": {
+        "action": [
+          9,
+          30,
+          31,
+          32,
+          37,
+          38,
+          88,
+          98,
+          100,
+          101
+        ],
+        "value": 15.0,
+        "upper_bound": 15.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.04401854099995717
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0023216660000002776,
+      "heuristic_value_same_snapshot": 15.0
+    },
+    {
+      "window": 28,
+      "fresh_fraction": 0.1896551724137931,
+      "selected_files": [
+        24,
+        30,
+        31,
+        33,
+        34,
+        36,
+        39,
+        86,
+        98
+      ],
+      "sync_cost": 28,
+      "solver": {
+        "action": [
+          24,
+          30,
+          31,
+          33,
+          34,
+          36,
+          39,
+          86,
+          98
+        ],
+        "value": 16.0,
+        "upper_bound": 16.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.012193625000008979
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.002370916000018042,
+      "heuristic_value_same_snapshot": 16.0
+    },
+    {
+      "window": 29,
+      "fresh_fraction": 0.4482758620689655,
+      "selected_files": [
+        9,
+        24,
+        33,
+        48,
+        49,
+        83,
+        89,
+        100,
+        101,
+        102
+      ],
+      "sync_cost": 33,
+      "solver": {
+        "action": [
+          9,
+          24,
+          33,
+          48,
+          49,
+          83,
+          89,
+          100,
+          101,
+          102
+        ],
+        "value": 30.0,
+        "upper_bound": 30.0,
+        "solver_gap": 0.0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.004420374999995147
+      },
+      "nonempty_stale_set": true,
+      "heuristic_seconds_same_snapshot": 0.0027757089999909113,
+      "heuristic_value_same_snapshot": 30.0
+    }
+  ],
+  "diagnostics": [],
+  "partial_fallback": false,
+  "tie_policy": "raw_HiGHS_incumbent_no_extra_tie_break",
+  "case": "public_montage",
+  "trace_sha256": "f6e95e3cd5a0a12bcae1f1643ed2fed45bc35c236d289e56e6c7f9202db24182",
+  "mean_rate": 0.5,
+  "population_cv": 1.0,
+  "delay_mode": "uniform",
+  "eta": 0.0
+}

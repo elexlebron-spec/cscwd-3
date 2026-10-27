@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "policy_traces": 1760,
+  "event_streams": 160,
+  "policy_windows": 52800,
+  "frozen_hashes": {
+    "config_sha256": "5895db8e43f3b3fa18f0deeaf2429e4afd39d8820127b4d830b74ab0c7e2d130",
+    "code_sha256": "03de8e89902e7210eb6701938d8ed4c2f75150b125a8b15dcc936bf597fe1b6f",
+    "public_manifest_sha256": "4e47485d40e001568771294587b69237545f5352a603b13bfcd107fecf3079e3",
+    "frozen_utc": "2026-10-27T12:48:02.957494+00:00"
+  },
+  "checks": [
+    "frozen_source_and_config",
+    "raw_and_processed_data_hashes",
+    "separate_seeds",
+    "all_trace_hashes",
+    "all_actions_stale_and_feasible",
+    "all_version_exact_freshness",
+    "all_window_aggregates",
+    "all_sync_task_by_task_dominance",
+    "complete_protocol_matrix"
+  ],
+  "clean_directory_replays": {
+    "seed": 100,
+    "method": "sabs_partial",
+    "cases": [
+      "synthetic_mu0.5",
+      "public_seismology",
+      "public_montage"
+    ],
+    "actions_and_freshness_match": true,
+    "timings_compared": false
+  }
+}
