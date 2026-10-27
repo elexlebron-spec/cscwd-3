@@ -1,0 +1,22 @@
+{
+  "version": "controlled_collaboration_v1",
+  "status": "PROTOCOL_BEFORE_HUMAN_DATA_COLLECTION",
+  "scope": "One 2-3-person team; controlled numerical design-coordination prototype, not industrial BIM or a population user study",
+  "formal_sessions": 3,
+  "warmup_seconds": 180,
+  "period_seconds": 90,
+  "windows": 10,
+  "live_delay_seconds": 45,
+  "offline_delays_seconds": [45, 15],
+  "offline_file_quota": 6,
+  "live_policy": "Full import at gate; checks after 45 seconds; no mid-window payload import",
+  "primary_comparison": "Same observed publication trace: All at 15 seconds versus All at 45 seconds",
+  "secondary_comparisons": "Gq, G0 and Iq at six-file quota, each at both delays; latest-version service and exact predicate-verdict agreement reported separately",
+  "task_inputs": "Four three-input clearance checks plus three four-input connection checks; topology fixed in model.py",
+  "event_source": "Actual participant publish actions, server monotonic timestamps, immutable JSON payloads and hash-chained records; never generated release events",
+  "request_cards": "Coordinator manually releases cards 1,2,3 at elapsed approximately 180,420,660 seconds and records release times",
+  "stopping_rule": "Three planned completed sessions regardless of results. Preserve aborted sessions and reasons. No event-count/effect-size stopping rule or retuning from outcomes",
+  "analysis_unit": "Session descriptive summaries for one team; do not treat windows/tasks as independent people or report population significance",
+  "counterfactual_limit": "Offline replay holds publication times fixed; not a randomized behavioral intervention or proof of how people would react under a different policy",
+  "data_separation": "PRACTICE, FIXTURE and FORMAL directories separate; automated software tests are never participant observations"
+}

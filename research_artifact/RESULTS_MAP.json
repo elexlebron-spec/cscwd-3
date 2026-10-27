@@ -3,7 +3,7 @@
   "primary_run": "results/runs/confirmatory_v1",
   "post_hoc_probe": "results/runs/mechanism_probe_v1",
   "table_I": "data/public/manifest.json",
-  "table_II": "results/runs/mechanism_probe_v1/summary.json#representative",
+  "table_II": "results/runs/budget_timing_intervention_v1/summary.json#arm_means",
   "table_III": [
     "results/runs/confirmatory_v1/analysis/mean_freshness_percent.csv",
     "results/runs/confirmatory_v1/analysis/paired_differences.csv"
@@ -15,6 +15,9 @@
   "figure_2": "scripts/analyze_confirmatory.py",
   "primary_verification": "python3 scripts/verify_confirmatory.py --replay",
   "probe_reproduction": "python3 scripts/analyze_mechanism_probe.py",
+  "budget_timing_reproduction": "python3 scripts/run_budget_timing_intervention.py run",
+  "budget_timing_verification": "python3 scripts/verify_budget_timing_intervention.py",
+  "human_data_status": "NOT_COLLECTED; field_study contains a sealed data-empty tool, not participant results",
   "version_contract": "python3 scripts/run_design_contract.py",
   "protocol_note": "Probe and contract comparison are post-hoc; original core code/configuration unchanged",
   "repository_target": "https://github.com/elexlebron-spec/cscwd-3",

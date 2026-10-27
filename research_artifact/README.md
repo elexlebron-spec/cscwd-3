@@ -14,6 +14,7 @@ Unpack `CSCWD2027_review_artifact.zip` and work in its `cscwd2027_artifact` fold
 python3 -m pip install -r requirements.txt
 python3 scripts/verify_confirmatory.py --replay
 python3 scripts/verify_mechanism_probe.py
+python3 scripts/verify_budget_timing_intervention.py
 ```
 
 The second command verifies the frozen source/configuration/data hashes, separate validation/test seeds, complete 1,760-policy-trace matrix, all recorded actions and costs, every version-exact task outcome, and task-by-task dominance of the unrestricted boundary reference. It also copies the frozen source into a temporary directory and regenerates seed-100 actions/freshness for the synthetic, Seismology, and Montage structures. It does not overwrite raw experimental records or compare machine-dependent timings.
@@ -34,7 +35,7 @@ The first command reconstructs primary results. The additional commands retain t
 | Paper item | Preserved outputs | Entry point |
 |---|---|---|
 | Table I: complete public structures | data/public/manifest.json, original JSONs/license, processed structures | scripts/fetch_public_data.py; files included for offline use |
-| Table II: first positive-immediate intervention | results/runs/mechanism_probe_v1/summary.json representative field and seed100.json | scripts/analyze_mechanism_probe.py; scripts/plot_evaluation_evidence.py emits macros |
+| Table II: complementary budget/timing intervention | results/runs/budget_timing_intervention_v1/summary.json and INTEGRITY.json | scripts/run_budget_timing_intervention.py run; scripts/verify_budget_timing_intervention.py; scripts/write_budget_timing_results.py |
 | Table III: primary 10% results | confirmatory_v1/analysis/{mean_freshness_percent,paired_differences,trace_summary}.csv | scripts/analyze_confirmatory.py |
 | Fig. 1a,b: primary evaluation signals | confirmatory_v1/analysis/analysis.json | scripts/plot_evaluation_evidence.py |
 | Fig. 1c: common-continuation probe | mechanism_probe_v1/summary.json, all 20 seed records | scripts/analyze_mechanism_probe.py; scripts/plot_evaluation_evidence.py |
@@ -46,6 +47,18 @@ The first command reconstructs primary results. The additional commands retain t
 Run directories above are under results/runs. The 480 interventions are 24 starts per seed on 20 previously seen test traces, not 480 independent samples or new confirmatory trials. At each start, only the initial choice differs; both branches subsequently run Gq on their own cache for five windows. Confidence intervals resample seed-level intervention averages. The first positive-immediate seed/window is selected without consulting later outcomes. All records remain available, including continued benefits and reversals. Equality of identical-action branches and exact replay of branch A against the preserved Gq trajectory are checked.
 
 The official BIM documentation permits choosing consumed versions. The worked contract therefore compares latest-published and frozen-manifest rules on identical constructed events. It is not a calibrated field study, and passing a different criterion is not an improvement under the old metric.
+
+## Targeted supplement and human-operated prototype
+
+The budget/timing protocol was fixed after seeing the old results but before seeds 1000–1019 were run. It retains 80 traces/2,400 windows. The largest-input group is selected from topology; the delay cap uses historical notification counts only. Full synchronization with original timing gives 0/600 target successes, versus 281/600 with capped timing. Under the original budget, all nine capped-timing successes occur at the initially current window, with none in the later 580 opportunities. The mean capped delay is 0.01357 window units; operational feasibility and higher All cost are not hidden. This is a targeted model intervention, not a new optimization algorithm or field validation.
+
+To reproduce the new supplement without altering primary data:
+
+    python3 scripts/run_budget_timing_intervention.py run
+    python3 scripts/verify_budget_timing_intervention.py
+    python3 scripts/write_budget_timing_results.py
+
+The sealed field_study directory contains a standalone, standard-library LAN prototype for a planned 2–3-person controlled case. It makes actual JSON file copies, executes numerical clearance/connection checks, and logs version freshness separately from predicate agreement. The included tests generate FIXTURE records only; **no participant observations have been collected or included**. A six-file replay quota is experimental, and counterfactuals hold publication behavior fixed. See field_study/README.md for the protocol and limits; no industrial BIM claim is made.
 
 ## Experiment provenance
 

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "records": 80,
+  "windows": 2400,
+  "seeds": 20,
+  "target_fresh_counts_all_600": {
+    "sabs_partial_original": 0,
+    "sabs_partial_history_cap": 9,
+    "all_original": 0,
+    "all_history_cap": 281
+  },
+  "target_fresh_counts_after_initial_580": {
+    "sabs_partial_original": 0,
+    "sabs_partial_history_cap": 0,
+    "all_original": 0,
+    "all_history_cap": 272
+  },
+  "initial_cache_caveat": "The nine budgeted capped-timing successes all occur at window zero with the initially current cache; no sustained recovery under the tested budget",
+  "checks": [
+    "frozen_core_and_script_hash",
+    "complete_matrix",
+    "past_only_delay_cap",
+    "cache_continuity",
+    "all_budgets",
+    "version_exact_every_task",
+    "exclusive_failure_partition",
+    "summary_values"
+  ]
+}
